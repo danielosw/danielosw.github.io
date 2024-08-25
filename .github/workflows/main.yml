@@ -1,0 +1,38 @@
+
+on:
+  push:
+    branches:
+      - main # Execute on every push
+  workflow_dispatch: # Execute on manual trigger
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+  
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # Linux base image
+    steps:
+      - uses: actions/checkout@v4 # Checkout repo
+      - uses: oven-sh/setup-bun@v2 # Setup bun
+        with:
+            bun-version: latest # You can also use a specific version
+      - name: bun setup
+      - run: bun install # Only needed if you have any dependencies
+      - name: build
+      - run: bun run build
+      - name: deploy
+      - uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: './dist/.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+      
+      
