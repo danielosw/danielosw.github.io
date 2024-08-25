@@ -21,13 +21,12 @@
 			"postcss-nesting": {},
 			"tailwindcss": {},
 			"autoprefixer": {},
-	"postcss-uncss": {
-			    "html": ["index.html", "src/App.svelte"]
+			"postcss-uncss": {
+				"html": ["*.html", "*/App.svelte"]
 			},
-			
-			"cssnano": {
-			}
-				}
+
+			"cssnano": {}
+		}
 	},
 	"private": true,
 	"scripts": {
