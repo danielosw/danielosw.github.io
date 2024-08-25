@@ -21,11 +21,11 @@ jobs:
         with:
             bun-version: latest # You can also use a specific version
       - name: bun setup
-      - run: bun install # Only needed if you have any dependencies
+        run: bun install # Only needed if you have any dependencies
       - name: build
-      - run: bun run build
+        run: bun run build
       - name: deploy
-      - uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
