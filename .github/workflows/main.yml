@@ -24,6 +24,9 @@ jobs:
         run: bun install # Only needed if you have any dependencies
       - name: build
         run: bun run build
+      - name: deploy prepare
+        # copy 404.html into dist
+        run: cp ./404.html ./dist/404.html
       - name: deploy
         uses: actions/configure-pages@v5
       - name: Upload artifact
