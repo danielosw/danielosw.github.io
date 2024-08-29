@@ -1,71 +1,65 @@
 <script lang="ts">
-import '../../app.css';
-let holder: number = 0
-    let placenum: number = 0;
-    let bees: number = placenum*25;
-    let hints: number = notzero(Math.floor(10*(bees-50)));
-    let clues: number = cluesget(hints);
-    let secrets: number = secretsget(clues);
-    let tales: number = talesget(secrets);
-    let implications: number = implicationsget(tales);
-    let incunabulums: number = incunabulumsget(implications);
-    function calc(){
-    placenum = holder;
-    bees = placenum*25;
-    hints = notzero(Math.floor(10*(bees-50)));
-    clues = cluesget(hints);
-    secrets = secretsget(clues);
-    tales = talesget(secrets);
-    implications = implicationsget(tales);
-    incunabulums = incunabulumsget(implications);
-    }
-    function incunabulumsget(implications: number): number{
-    if(implications<25){
-	return 0
-    }
-    else{
-	return 5+incunabulumsget(implications-25)
-    }
-    }
-function implicationsget(tales: number): number{
-    if(tales<50){
-	return 0
-    }
-    else{
-	return 10+implicationsget(tales-50)
-    }
+import "../../app.css";
+let holder: number = 0;
+let placenum: number = 0;
+let bees: number = placenum * 25;
+let hints: number = notzero(Math.floor(10 * (bees - 50)));
+let clues: number = cluesget(hints);
+let secrets: number = secretsget(clues);
+let tales: number = talesget(secrets);
+let implications: number = implicationsget(tales);
+let incunabulums: number = incunabulumsget(implications);
+function calc() {
+	placenum = holder;
+	bees = placenum * 25;
+	hints = notzero(Math.floor(10 * (bees - 50)));
+	clues = cluesget(hints);
+	secrets = secretsget(clues);
+	tales = talesget(secrets);
+	implications = implicationsget(tales);
+	incunabulums = incunabulumsget(implications);
 }
-function talesget(secrets: number): number{
-    if (secrets<333){
-	return 0
-    }
-    else{
-	return 105 + talesget(secrets-333)
-    }
+function incunabulumsget(implications: number): number {
+	if (implications < 25) {
+		return 0;
+	} else {
+		return 5 + incunabulumsget(implications - 25);
+	}
 }
-function secretsget(clues: number): number{
-    if(clues<500){
-	return 0
-    }
-    else{
-	return 70 + secretsget(clues-500)
-    }
+function implicationsget(tales: number): number {
+	if (tales < 50) {
+		return 0;
+	} else {
+		return 10 + implicationsget(tales - 50);
+	}
 }
-function cluesget(hints: number):number{
-    if(hints<500){
-	return 0
-    }
-    else{
-	return 200 + cluesget(hints-500)
-    }
+function talesget(secrets: number): number {
+	if (secrets < 333) {
+		return 0;
+	} else {
+		return 105 + talesget(secrets - 333);
+	}
 }
-function notzero(num: number):number {
-    if (num<0) {
-    	return 0
-    }
-    else{
-	return num
-    }
+function secretsget(clues: number): number {
+	if (clues < 500) {
+		return 0;
+	} else {
+		return 70 + secretsget(clues - 500);
+	}
+}
+function cluesget(hints: number): number {
+	if (hints < 500) {
+		return 0;
+	} else {
+		return 200 + cluesget(hints - 500);
+	}
+}
+function notzero(num: number): number {
+	if (num < 0) {
+		return 0;
+	} else {
+		return num;
+	}
 }
 </script>
 
