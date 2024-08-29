@@ -1,6 +1,6 @@
 <script lang="ts">
+import '../app.css';
 </script>
-
 <main>
     <div class="flex">
         <p class="px-4 py-2 rounded-full bg-purple-500 text-white flex-1">

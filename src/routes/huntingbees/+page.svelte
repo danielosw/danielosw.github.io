@@ -1,5 +1,6 @@
 <script lang="ts">
-    let holder: number = 0
+import '../../app.css';
+let holder: number = 0
     let placenum: number = 0;
     let bees: number = placenum*25;
     let hints: number = notzero(Math.floor(10*(bees-50)));

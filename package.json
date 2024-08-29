@@ -1,47 +1,46 @@
 {
-	"name": "githubpage",
-	"version": "0.0.0",
+	"name": "danielosw.github.io",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "eslint ."
+	},
 	"devDependencies": {
-		"@sveltejs/vite-plugin-svelte": "^3.1.2",
-		"@tsconfig/svelte": "^5.0.4",
+		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/adapter-static": "^3.0.4",
+		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"@types/eslint": "^9.6.0",
 		"autoprefixer": "^10.4.20",
 		"cssnano": "^7.0.5",
+		"eslint": "^9.0.0",
+		"eslint-plugin-svelte": "^2.36.0",
+		"globals": "^15.0.0",
+		"postcss": "^8.4.41",
+		"postcss-import": "^16.1.0",
+		"postcss-load-config": "^6.0.1",
 		"postcss-nesting": "^13.0.0",
 		"postcss-uncss": "^0.17.0",
-		"svelte": "^4.2.19",
-		"svelte-check": "^3.8.6",
-		"svelte-spa-router": "^4.0.1",
+		"svelte": "^4.2.7",
+		"svelte-check": "^3.6.0",
 		"tailwindcss": "^3.4.10",
-		"tslib": "^2.7.0",
-		"typescript": "^5.5.4",
-		"uncss": "^0.17.3",
-		"vite": "^5.4.2"
+		"typescript": "^5.0.0",
+		"typescript-eslint": "^8.0.0",
+		"vite": "^5.0.3"
 	},
 	"postcss": {
 		"plugins": {
 			"postcss-nesting": {},
+			"postcss-import": {},
 			"tailwindcss": {},
 			"autoprefixer": {},
-			"postcss-uncss": {
-				"html": [
-					"*.html",
-					"*/App.svelte"
-				]
-			},
 			"cssnano": {}
 		}
 	},
-	"private": true,
-	"scripts": {
-		"dev": "vite",
-		"build": "vite build",
-		"preview": "vite preview",
-		"check": "svelte-check --tsconfig ./tsconfig.json && tsc -p tsconfig.node.json"
-	},
-	"trustedDependencies": [
-		"@biomejs/biome",
-		"esbuild",
-		"svelte-preprocess"
-	],
 	"type": "module"
 }
