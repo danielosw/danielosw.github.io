@@ -23,7 +23,7 @@ jobs:
       - name: build
         run: |
          bun install
-         bun run buil
+         bun run build
          cp ./404.html ./build/404.html
       - name: deploy
         uses: actions/configure-pages@v5
