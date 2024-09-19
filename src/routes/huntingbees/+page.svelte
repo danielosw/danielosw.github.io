@@ -1,5 +1,4 @@
 <script lang="ts">
-import "../../app.css";
 let holder: number = 0;
 let placenum: number = 0;
 let bees: number = placenum * 25;
@@ -64,18 +63,18 @@ function notzero(num: number): number {
 </script>
 
 <main>
-<div class="flex justify-center">
+<div class="centerflex">
 <ul>
 <li>
-<p class="justify-center px-2 py-1">
+<p>
     This assumes your only using <a href="https://fallenlondon.wiki/wiki/Set_an_ambush">set an ambush</a> or <a href="https://fallenlondon.wiki/wiki/Sow_carnage">sow carnage</a>, that your success chance is 100% and that you are only bulk converting.
 </p>
 </li>
 <li>
 <br>
 <form on:submit|preventDefault={calc}>
-<input bind:value={holder} placeholder="enter bee amount" class="px-2 py-1 rounded-full"/>
-<button disabled={!holder} type="submit">Submit</button>
+<input bind:value={holder} placeholder="enter bee amount" class="small-button"/>
+<button disabled={!holder} type="submit" class="submit">Submit</button>
 </form>
 </li>
 <li>

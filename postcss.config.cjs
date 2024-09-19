@@ -1,8 +1,9 @@
 const purgecss = require("@fullhuman/postcss-purgecss");
 module.exports = {
 	plugins: [
-		require("postcss-nesting"),
 		require("postcss-import"),
+		require("postcss-nesting"),
+		
 		require("tailwindcss"),
 		require("autoprefixer"),
 		require("cssnano")({
