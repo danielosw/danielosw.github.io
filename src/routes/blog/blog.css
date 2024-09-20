@@ -7,13 +7,15 @@
 	@apply vertflex;
 	@apply border;
 	@apply border-white;
+	position: relative;
 	min-width: 40vw;
 	min-height: fit-content;
-	min-width: 40vw;
-	max-height: 20vh;
+	max-width: 40vw;
+	max-height: fit-content;
 }
 .blogwrap{
 	@apply centerflex;
+	position: relative;
 	min-width: 40vw;
 	max-height: 80vh;
 	min-height: fit-content;
