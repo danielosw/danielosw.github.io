@@ -39,7 +39,7 @@
 	@apply self-center;
 	@apply items-center;
 	@apply text-center;
-	@apply min-h-screen;
+
 	@apply relative;
 }
 .plaincenter{

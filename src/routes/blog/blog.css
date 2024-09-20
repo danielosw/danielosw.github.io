@@ -12,13 +12,15 @@
 	min-height: fit-content;
 	max-width: 40vw;
 	max-height: fit-content;
+	
 }
 .blogwrap{
 	@apply centerflex;
-	position: relative;
+	position: absolute;
 	min-width: 40vw;
-	max-height: 80vh;
-	min-height: fit-content;
+	@apply top-5;
+	overflow: hidden;
+	@apply scroll-pb-10;
 }
 .title {
 	@apply text-green-500;

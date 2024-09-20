@@ -4,9 +4,8 @@
 	@apply self-center;
 	@apply items-center;
 	@apply text-center;
-    @apply absolute;
+    @apply fixed;
     @apply bottom-5;
     width: 100%;
-
     
 }
