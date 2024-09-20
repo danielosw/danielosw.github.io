@@ -3,7 +3,8 @@ import Post from "../templates/posttemplate.svelte";
 import Footer from "../templates/footer.svelte";
 </script>
     <main>
-        <div class="centerflex">
+        <div class="vertflex">
+        <div class="blogwrap">
         <ul>
             <Post title="testtitle" text="testtext"></Post>
             <Post title="testtitle" text="testtext"></Post>
@@ -11,4 +12,5 @@ import Footer from "../templates/footer.svelte";
         </ul>
     </div>
     <Footer></Footer>
+</div>
         </main>

@@ -1,0 +1,12 @@
+.footer{
+    @apply flex;
+	@apply justify-center;
+	@apply self-center;
+	@apply items-center;
+	@apply text-center;
+    @apply absolute;
+    @apply bottom-5;
+    width: 100%;
+
+    
+}

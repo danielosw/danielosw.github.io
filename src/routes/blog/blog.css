@@ -12,6 +12,12 @@
 	min-width: 40vw;
 	max-height: 20vh;
 }
+.blogwrap{
+	@apply centerflex;
+	min-width: 40vw;
+	max-height: 80vh;
+	min-height: fit-content;
+}
 .title {
 	@apply text-green-500;
 	@apply text-2xl;
