@@ -1,8 +1,11 @@
+<script lang="ts">
+import Footer from "./templates/footer.svelte";
+</script>
 <main class="">
-    <div class="centerflex">
+    <div class="menu">
         <ul>
         <li>
-            <p class="large-button bg-purple-500">
+            <p class="small-button bg-purple-500">
             Hello! I am Daniel, and welcome to my site.
         </p></li>
         <li>
@@ -12,6 +15,10 @@
             <li class="bg-red-500 small-button">
                 <a href="/huntingbees"> fallen london calculators</a>
             </li>
+            <li class="bg-red-500 small-button">
+                <a href="/blog"> My blog</a>
+            </li>
         </ul>
     </div>
+    <Footer></Footer>
 </main>

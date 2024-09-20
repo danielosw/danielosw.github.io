@@ -1,4 +1,5 @@
 <script lang="ts">
+import Footer from "../templates/footer.svelte";
 let holder: number = 0;
 let placenum: number = 0;
 let bees: number = placenum * 25;
@@ -105,4 +106,5 @@ function notzero(num: number): number {
 </li>
 </ul>
 </div>
+<Footer></Footer>
 </main>

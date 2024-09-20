@@ -1,0 +1,9 @@
+@import "./app.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.menu {
+	@apply centerflex;
+	@apply max-h-min;
+	@apply min-h-fit;
+}

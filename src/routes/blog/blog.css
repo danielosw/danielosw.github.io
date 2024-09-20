@@ -1,0 +1,18 @@
+@import "../app.css";
+.vertflex {
+	@apply centerflex;
+	flex-direction: column;
+}
+.blogbox {
+	@apply vertflex;
+	@apply border;
+	@apply border-white;
+	min-width: 40vw;
+	min-height: fit-content;
+	min-width: 40vw;
+	max-height: 20vh;
+}
+.title {
+	@apply text-green-500;
+	@apply text-2xl;
+}

@@ -1,0 +1,20 @@
+@import "../app.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.submit {
+	border-radius: 8px;
+	border: 1px solid transparent;
+	@apply small-button;
+	@apply rounded-md;
+	font-family: inherit;
+	background-color: #1a1a1a;
+	cursor: pointer;
+	transition: border-color 0.25s;
+	&:hover {
+		border-color: #646cff;
+	}
+	&:focus-visible &:focus {
+		outline: 4px auto -webkit-focus-ring-color;
+	}
+}

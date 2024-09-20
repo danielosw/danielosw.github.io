@@ -1,4 +1,4 @@
 <script lang="ts">
-import "./index.css";
+import "./bees.css";
 </script>
 <slot></slot>
