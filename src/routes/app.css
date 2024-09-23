@@ -55,16 +55,16 @@ a {
 	}
 }
 .fade{
-	animation: fadein 1.5s;
+	animation: fadein 1s;
 }
 .fade1{
-	animation: fadein 2.5s;
+	animation: fadein 2s;
 }
 .fade2{
-	animation: fadein 3.5s;
+	animation: fadein 3s;
 }
 .fade3{
-	animation: fadein 4.5s;
+	animation: fadein 4s;
 }
 @keyframes fadein {
     from { opacity: 0; }
