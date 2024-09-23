@@ -1,10 +1,11 @@
 @import "../app.css";
 .vertflex {
 	@apply centerflex;
-	flex-direction: column;
+	top: 30%;
+	left: 30%;
 }
 .blogbox {
-	@apply vertflex;
+	@apply centerflex;
 	@apply border;
 	@apply border-white;
 	position: relative;

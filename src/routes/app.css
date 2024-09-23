@@ -17,7 +17,7 @@
 }
 
 .justiflex {
-	@apply flex;
+	@apply grid;
 	@apply text-center;
 	@apply justify-center;
 	@apply min-h-screen;
@@ -34,12 +34,11 @@
 	@apply py-1;
 }
 .centerflex {
-	@apply flex;
+	@apply grid;
 	@apply justify-center;
 	@apply self-center;
 	@apply items-center;
 	@apply text-center;
-
 	@apply relative;
 }
 .plaincenter{

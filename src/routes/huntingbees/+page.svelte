@@ -63,7 +63,7 @@ function notzero(num: number): number {
 }
 </script>
 
-<main>
+<main class="">
 <div class="centerflex fade1">
 <ul>
 <li>
