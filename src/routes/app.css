@@ -54,3 +54,19 @@ a {
 		color: #535bf2;
 	}
 }
+.fade{
+	animation: fadein 1.5s;
+}
+.fade1{
+	animation: fadein 2.5s;
+}
+.fade2{
+	animation: fadein 3.5s;
+}
+.fade3{
+	animation: fadein 4.5s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
