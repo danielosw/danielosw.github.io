@@ -1,6 +1,6 @@
 @import "./app.css";
 .menu {
-	@apply centerflex;
+	@apply centergrid;
 	@apply max-h-min;
 	@apply min-h-fit;
 }

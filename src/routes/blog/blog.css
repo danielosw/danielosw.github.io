@@ -1,11 +1,11 @@
 @import "../app.css";
-.vertflex {
-	@apply centerflex;
+.virtgrid {
+	@apply centergrid;
 	top: 30%;
 	left: 30%;
 }
 .blogbox {
-	@apply centerflex;
+	@apply centergrid;
 	@apply border;
 	@apply border-white;
 	position: relative;
@@ -16,7 +16,7 @@
 	
 }
 .blogwrap{
-	@apply centerflex;
+	@apply centergrid;
 	position: absolute;
 	min-width: 40vw;
 	@apply top-5;

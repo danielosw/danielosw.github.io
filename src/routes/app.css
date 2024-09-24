@@ -16,7 +16,7 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.justiflex {
+.justigrid {
 	@apply grid;
 	@apply text-center;
 	@apply justify-center;
@@ -33,7 +33,7 @@
 	@apply px-2;
 	@apply py-1;
 }
-.centerflex {
+.centergrid {
 	@apply grid;
 	@apply justify-center;
 	@apply self-center;
@@ -42,7 +42,7 @@
 	@apply relative;
 }
 .plaincenter{
-	@apply centerflex;
+	@apply centergrid;
 	min-height: auto;
 }
 a {
