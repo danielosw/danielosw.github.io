@@ -3,7 +3,7 @@ import Post from "../templates/posttemplate.svelte";
 import Footer from "../templates/footer.svelte";
 </script>
     <main class="flex max-w-full max-h-full">
-        <div class="virtgrid fade1">
+        <div class="virtgrid fade2s">
         <div class="blogwrap">
         <ul>
             <Post title="testtitle" >test text</Post>

@@ -1,4 +1,5 @@
 @import "./app.css";
+@import "./animations/fade.css";
 .menu {
 	@apply centergrid;
 	@apply max-h-min;

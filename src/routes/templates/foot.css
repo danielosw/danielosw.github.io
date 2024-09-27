@@ -1,16 +1,12 @@
 .footer{
     @apply grid;
-
+    animation: fadein 4s;
 	@apply text-center;
     @apply fixed;
     @apply bottom-5;
     width: 100%;
-    @apply fade3;
 	left: 0%;
     
-}
-.fade3{
-	animation: fadein 3s;
 }
 @keyframes fadein {
     from { opacity: 0; }

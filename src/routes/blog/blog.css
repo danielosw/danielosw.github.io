@@ -1,4 +1,5 @@
 @import "../app.css";
+@import "../animations/fade.css";
 .virtgrid {
 	@apply centergrid;
 	top: 30%;
