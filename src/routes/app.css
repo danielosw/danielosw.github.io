@@ -16,23 +16,7 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.justigrid {
-	@apply grid;
-	@apply text-center;
-	@apply justify-center;
-	@apply min-h-screen;
-}
-.button {
-	@apply text-white;
-	@apply text-center;
-	@apply rounded-full;
-}
 
-.small-button {
-	@apply button;
-	@apply px-2;
-	@apply py-1;
-}
 .centergrid {
 	@apply grid;
 	@apply justify-center;
@@ -41,10 +25,7 @@
 	@apply text-center;
 	@apply relative;
 }
-.plaincenter{
-	@apply centergrid;
-	min-height: auto;
-}
+
 a {
 	font-weight: 500;
 	color: #646cff;

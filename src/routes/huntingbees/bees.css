@@ -16,3 +16,14 @@
 		outline: 4px auto -webkit-focus-ring-color;
 	}
 }
+.button {
+	@apply text-white;
+	@apply text-center;
+	@apply rounded-full;
+}
+
+.small-button {
+	@apply button;
+	@apply px-2;
+	@apply py-1;
+}
