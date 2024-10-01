@@ -1,21 +1,12 @@
 <script lang="ts">
 import Post from "../templates/posttemplate.svelte";
-import Footer from "../templates/footer.svelte";
 </script>
     <main class="flex max-w-full max-h-full">
         <div class="virtgrid fade2s">
         <div class="blogwrap">
         <ul>
-            <Post title="testtitle" >test text</Post>
-            <Post title="testtitle" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam soluta incidunt quam doloremque tenetur at aut! Doloribus itaque excepturi odio consectetur consequuntur veniam officia culpa dolor incidunt, omnis perspiciatis officiis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae cupiditate laudantium voluptates. Nobis maxime libero consequatur esse similique natus blanditiis explicabo iure, sit officiis, eligendi ipsa non qui beatae cumque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi quisquam nihil culpa laborum doloremque obcaecati cumque minima nam dolorum, tempora odit rem a porro rerum totam maiores cupiditate reiciendis?</Post>
-            <Post title="testtitle" >fine text</Post>
-            <Post title="testtitle" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam soluta incidunt quam doloremque tenetur at aut! Doloribus itaque excepturi odio consectetur consequuntur veniam officia culpa dolor incidunt, omnis perspiciatis officiis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae cupiditate laudantium voluptates. Nobis maxime libero consequatur esse similique natus blanditiis explicabo iure, sit officiis, eligendi ipsa non qui beatae cumque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi quisquam nihil culpa laborum doloremque obcaecati cumque minima nam dolorum, tempora odit rem a porro rerum totam maiores cupiditate reiciendis?</Post>
-            <Post title="testtitle" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam soluta incidunt quam doloremque tenetur at aut! Doloribus itaque excepturi odio consectetur consequuntur veniam officia culpa dolor incidunt, omnis perspiciatis officiis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae cupiditate laudantium voluptates. Nobis maxime libero consequatur esse similique natus blanditiis explicabo iure, sit officiis, eligendi ipsa non qui beatae cumque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi quisquam nihil culpa laborum doloremque obcaecati cumque minima nam dolorum, tempora odit rem a porro rerum totam maiores cupiditate reiciendis?</Post>
-            <Post title="testtitle" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam soluta incidunt quam doloremque tenetur at aut! Doloribus itaque excepturi odio consectetur consequuntur veniam officia culpa dolor incidunt, omnis perspiciatis officiis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae cupiditate laudantium voluptates. Nobis maxime libero consequatur esse similique natus blanditiis explicabo iure, sit officiis, eligendi ipsa non qui beatae cumque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi quisquam nihil culpa laborum doloremque obcaecati cumque minima nam dolorum, tempora odit rem a porro rerum totam maiores cupiditate reiciendis?</Post>
-            <Post title="testtitle" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam soluta incidunt quam doloremque tenetur at aut! Doloribus itaque excepturi odio consectetur consequuntur veniam officia culpa dolor incidunt, omnis perspiciatis officiis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae cupiditate laudantium voluptates. Nobis maxime libero consequatur esse similique natus blanditiis explicabo iure, sit officiis, eligendi ipsa non qui beatae cumque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi quisquam nihil culpa laborum doloremque obcaecati cumque minima nam dolorum, tempora odit rem a porro rerum totam maiores cupiditate reiciendis?</Post>
-            
+            <Post title="ai thoughts" ></Post>
         </ul>
     </div>
-    <Footer></Footer>
 </div>
         </main>

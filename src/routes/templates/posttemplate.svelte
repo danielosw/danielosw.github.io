@@ -5,7 +5,7 @@
 <li>
     <div class="blogbox">
         <h1 class="title">
-            {title}
+            <a href="/details/{title.replace(" ","")}">{title}</a>
         </h1>
         <br />
         <p>

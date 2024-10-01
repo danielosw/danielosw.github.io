@@ -1,0 +1,19 @@
+@import "../app.css";
+@import "../animations/fade.css";
+.blogwrap{
+	@apply centergrid;
+	position: absolute;
+	min-width: 40vw;
+	@apply top-5;
+	overflow: hidden;
+	@apply scroll-pb-10;
+}
+.title {
+	@apply text-green-500;
+	@apply text-2xl;
+}
+.virtgrid {
+	@apply centergrid;
+	top: 30%;
+	left: 30%;
+}

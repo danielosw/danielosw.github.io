@@ -1,5 +1,4 @@
 <script lang="ts">
-import Footer from "./templates/footer.svelte";
 import "./index.css"
 
 </script>
@@ -22,5 +21,4 @@ import "./index.css"
             </li>
         </ul>
     </div>
-    <Footer></Footer>
 </main>
