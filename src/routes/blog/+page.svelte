@@ -5,7 +5,9 @@ import Post from "../templates/posttemplate.svelte";
         <div class="virtgrid fade2s">
         <div class="blogwrap">
         <ul>
-            <Post title="ai thoughts" ></Post>
+            <Post title="ai thoughts" >
+                A post about my thoughts on ai.
+            </Post>
         </ul>
     </div>
 </div>

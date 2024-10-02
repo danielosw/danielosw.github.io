@@ -1,6 +1,6 @@
 
 <script lang="ts">
-    import "./foot.css"
+import "./foot.css";
 </script>
 <div class="footer">
     <p>

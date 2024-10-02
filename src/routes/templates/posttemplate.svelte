@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let title = "placeholder";
+export let title = "placeholder";
 </script>
 
 <li>

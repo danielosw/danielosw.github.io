@@ -1,5 +1,4 @@
 @import "../app.css";
-@import "../animations/fade.css";
 .virtgrid {
 	@apply centergrid;
 	top: 30%;
@@ -14,9 +13,8 @@
 	min-height: fit-content;
 	max-width: 40vw;
 	max-height: fit-content;
-	
 }
-.blogwrap{
+.blogwrap {
 	@apply centergrid;
 	position: absolute;
 	min-width: 40vw;

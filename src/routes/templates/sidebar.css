@@ -1,11 +1,12 @@
-.footer {
+.barwrap {
 	@apply grid;
 	animation: fadein 4s;
 	@apply text-center;
 	@apply fixed;
-	@apply bottom-5;
-	width: 100%;
-	left: 0%;
+	@apply top-5;
+    @apply left-3;
+
+	width: 5%;
 }
 @keyframes fadein {
 	from {
@@ -14,4 +15,8 @@
 	to {
 		opacity: 1;
 	}
+}
+.droplink{
+    @apply p-2; 
+    @apply w-52;
 }

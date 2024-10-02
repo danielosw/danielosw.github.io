@@ -16,7 +16,6 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-
 .centergrid {
 	@apply grid;
 	@apply justify-center;

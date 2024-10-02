@@ -1,6 +1,5 @@
 <script lang="ts">
-import "./index.css"
-
+import "./index.css";
 </script>
 <main class="">
     <div class="menu">

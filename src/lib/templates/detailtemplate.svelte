@@ -1,7 +1,7 @@
 <script lang="ts">
-    export let title = "temp"
-    
-    </script>
+export let title = "temp";
+</script>
+    <!-- -->
 <main class="flex max-w-full max-h-full">
     <div class="virtgrid">
     <div class="blogwrap">

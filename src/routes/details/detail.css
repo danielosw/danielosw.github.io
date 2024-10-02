@@ -1,6 +1,5 @@
 @import "../app.css";
-@import "../animations/fade.css";
-.blogwrap{
+.blogwrap {
 	@apply centergrid;
 	position: absolute;
 	min-width: 40vw;
