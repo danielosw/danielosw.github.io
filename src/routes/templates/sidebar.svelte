@@ -16,6 +16,7 @@
 </script>
 
 <div class="barwrap">
+    
     <div class="dropdown" on:focusout={handleDropdownfocusout}>
         <button class=" m-1" on:click={handleDropdownClick}>
             {#if isDropdownOpen}
@@ -50,10 +51,18 @@
                 </svg>
             {/if}
         </button>
-        <ul class="" style:visibility={isDropdownOpen ? 'visible' : 'hidden'}>
+        <ul class="" style:display={isDropdownOpen ? 'inline' : 'none'}>
 			<li class="droplink"><a href="/">Home page</a></li>
             <li class="droplink"><a href="/blog">Blogs</a></li>
             <li class="droplink"><a href="/huntingbees">Fallen London Calculators</a></li>
             </ul>
+            <noscript>
+                <ul class="">
+                    <li class="droplink"><a href="/">Home page</a></li>
+                    <li class="droplink"><a href="/blog">Blogs</a></li>
+                    <li class="droplink"><a href="/huntingbees">Fallen London Calculators</a></li>
+                    </ul>
+            </noscript>
     </div>
+    
 </div>
