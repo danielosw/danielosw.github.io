@@ -1,18 +1,18 @@
 <script lang="ts">
-    import "./sidebar.css";
-    let isDropdownOpen = false; // default state (dropdown close)
+import "./sidebar.css";
+let isDropdownOpen = false; // default state (dropdown close)
 
-    const handleDropdownClick = () => {
-        isDropdownOpen = !isDropdownOpen; // togle state on click
-    };
-    const handleDropdownfocusout = ({ relatedTarget, currentTarget }) => {
-        if (
-            relatedTarget instanceof HTMLElement &&
-            currentTarget.contains(relatedTarget)
-        )
-            return;
-        isDropdownOpen = false;
-    };
+const handleDropdownClick = () => {
+	isDropdownOpen = !isDropdownOpen; // togle state on click
+};
+const handleDropdownfocusout = ({ relatedTarget, currentTarget }) => {
+	if (
+		relatedTarget instanceof HTMLElement &&
+		currentTarget.contains(relatedTarget)
+	)
+		return;
+	isDropdownOpen = false;
+};
 </script>
 
 <div class="barwrap">

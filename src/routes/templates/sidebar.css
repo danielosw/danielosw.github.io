@@ -4,7 +4,7 @@
 	@apply text-center;
 	@apply fixed;
 	@apply top-5;
-    @apply left-3;
+	@apply left-3;
 
 	width: 5%;
 }
@@ -16,7 +16,7 @@
 		opacity: 1;
 	}
 }
-.droplink{
-    @apply p-2; 
-    @apply w-52;
+.droplink {
+	@apply p-2;
+	@apply w-52;
 }

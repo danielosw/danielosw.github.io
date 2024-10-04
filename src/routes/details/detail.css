@@ -1,4 +1,4 @@
-@import "../app.css";
+@import "$lib/css/app.css";
 .blogwrap {
 	@apply centergrid;
 	position: absolute;
