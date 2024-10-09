@@ -4,9 +4,18 @@
 	@apply text-center;
 	@apply fixed;
 	@apply top-5;
-	@apply left-3;
-
+	@apply left-10;
+	@apply text-center;
 	width: 5%;
+}
+.fade1 {
+	animation: fadein 1.1s;
+}
+.fade2 {
+	animation: fadein 1.6s;
+}
+.fade3 {
+	animation: fadein 2.1s;
 }
 @keyframes fadein {
 	from {
@@ -16,7 +25,8 @@
 		opacity: 1;
 	}
 }
+
 .droplink {
-	@apply p-2;
-	@apply w-52;
+	@apply w-20;
+	
 }

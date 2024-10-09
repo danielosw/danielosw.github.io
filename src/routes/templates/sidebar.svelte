@@ -1,23 +1,17 @@
 <script lang="ts">
 import "./sidebar.css";
+import "$lib/animations/dropdown.css";
 let isDropdownOpen = false; // default state (dropdown close)
 
 const handleDropdownClick = () => {
 	isDropdownOpen = !isDropdownOpen; // togle state on click
 };
-const handleDropdownfocusout = ({ relatedTarget, currentTarget }) => {
-	if (
-		relatedTarget instanceof HTMLElement &&
-		currentTarget.contains(relatedTarget)
-	)
-		return;
-	isDropdownOpen = false;
-};
+
 </script>
 
 <div class="barwrap">
     
-    <div class="dropdown" on:focusout={handleDropdownfocusout}>
+    <div class="dropdown">
         <button class=" m-1" on:click={handleDropdownClick}>
             {#if isDropdownOpen}
                 <svg
@@ -52,15 +46,17 @@ const handleDropdownfocusout = ({ relatedTarget, currentTarget }) => {
             {/if}
         </button>
         <ul class="" style:display={isDropdownOpen ? 'inline' : 'none'}>
-			<li class="droplink"><a href="/">Home page</a></li>
-            <li class="droplink"><a href="/blog">Blogs</a></li>
-            <li class="droplink"><a href="/huntingbees">Fallen London Calculators</a></li>
+		<div class="wrapper1">
+            <li class="droplink dropper fade1"><a href="/">Home</a></li>
+            <li class="droplink dropper fade2"><a href="/blog">Blogs</a></li>
+            <li class="droplink dropper fade3"><a href="/huntingbees">Calculators</a></li>
+        </div>
             </ul>
             <noscript>
                 <ul class="">
-                    <li class="droplink"><a href="/">Home page</a></li>
+                    <li class="droplink"><a href="/">Home</a></li>
                     <li class="droplink"><a href="/blog">Blogs</a></li>
-                    <li class="droplink"><a href="/huntingbees">Fallen London Calculators</a></li>
+                    <li class="droplink"><a href="/huntingbees">Calculators</a></li>
                     </ul>
             </noscript>
     </div>
