@@ -1,6 +1,9 @@
+@define-mixin fade $amount {
+	animation: fadein $(amount)s;
+}
 .barwrap {
 	@apply grid;
-	animation: fadein 4s;
+	@mixin fade 4;
 	@apply text-center;
 	@apply fixed;
 	@apply top-5;
@@ -9,16 +12,17 @@
 	width: 5%;
 }
 .fade1 {
-	animation: fadein 1.1s;
+	@mixin fade 1.1;
 }
 .fade2 {
+	@mixin fade 1.6;
 	animation: fadein 1.6s;
 }
 .fade3 {
-	animation: fadein 2.1s;
+	@mixin fade 2.1;
 }
 .fade4 {
-	animation: fadein 2.6s;
+	@mixin fade 2.6;
 }
 @keyframes fadein {
 	from {

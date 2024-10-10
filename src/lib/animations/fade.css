@@ -1,23 +1,26 @@
+@define-mixin fade $amount {
+	animation: fadein $(amount)s;
+}
 .fade1s {
-	animation: fadein 1s;
+@mixin fade 1;
 }
 .fade2s {
-	animation: fadein 2s;
+@mixin fade 2;
 }
 .fade3s {
-	animation: fadein 3s;
+@mixin fade 3;
 }
 .fade4s {
-	animation: fadein 4s;
+@mixin fade 4;
 }
 .fade5s {
-	animation: fadein 5s;
+@mixin fade 5;
 }
 @keyframes fadein {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+from {
+	opacity: 0;
+}
+to {
+	opacity: 1;
+}
 }

@@ -5,6 +5,7 @@ module.exports = {
 		require("postcss-import"),
 		require("postcss-nesting"),
 		require("tailwindcss"),
+		require('postcss-mixins'),
 		postcssPresetEnv({
 			/* pluginOptions */
 			stage: 3,
