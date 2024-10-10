@@ -10,6 +10,9 @@
 .fade4s {
 	animation: fadein 4s;
 }
+.fade5s {
+	animation: fadein 5s;
+}
 @keyframes fadein {
 	from {
 		opacity: 0;

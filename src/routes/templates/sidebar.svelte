@@ -50,6 +50,7 @@ const handleDropdownClick = () => {
             <li class="droplink dropper fade1"><a href="/">Home</a></li>
             <li class="droplink dropper fade2"><a href="/blog">Blogs</a></li>
             <li class="droplink dropper fade3"><a href="/huntingbees">Calculators</a></li>
+            <li class="droplink dropper fade4"><a href="/portfolio">Portfolio</a></li>
         </div>
             </ul>
             <noscript>
@@ -57,6 +58,7 @@ const handleDropdownClick = () => {
                     <li class="droplink"><a href="/">Home</a></li>
                     <li class="droplink"><a href="/blog">Blogs</a></li>
                     <li class="droplink"><a href="/huntingbees">Calculators</a></li>
+                    <li class="droplink"><a href="/portfolio">Portfolio</a></li>
                     </ul>
             </noscript>
     </div>

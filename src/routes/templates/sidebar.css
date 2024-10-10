@@ -17,6 +17,9 @@
 .fade3 {
 	animation: fadein 2.1s;
 }
+.fade4 {
+	animation: fadein 2.6s;
+}
 @keyframes fadein {
 	from {
 		opacity: 0;

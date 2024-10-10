@@ -6,7 +6,7 @@
     export let imgsrc = "placeholder";
     export let alt = "placeholder";
 </script>
-<div class="fade1s">
+<div class="fade1s portwrap">
     <a {href}>
         <img {alt} src="{imgsrc}">
         <h1>{title}</h1>

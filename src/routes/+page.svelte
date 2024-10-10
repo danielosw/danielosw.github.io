@@ -18,6 +18,9 @@ import "./index.css";
             <li class="bg-red-500 fade4s small-button">
                 <a href="/blog"> My blog</a>
             </li>
+            <li class="bg-red-500 fade5s small-button">
+                <a href="/portfolio"> My portfolio</a>
+            </li>
         </ul>
     </div>
 </main>
