@@ -1,20 +1,16 @@
 @define-mixin drop $amount {
-	animation: dropdown $(amount)s;
+	.dropdown$(amount){
+        animation: dropdown $(amount)s;
+    }
 }
-.dropdown1{
-    @mixin drop 1;
-}
-.dropdown2{
-    @mixin drop 1.5;
-}
-.dropdown3{
-    @mixin drop 2;
-}
+@mixin drop 1;
+@mixin drop 1.5;
+@mixin drop 2;
 .dropper{
     transition: inherit;
 }
 .wrapper1{
-    @apply dropdown1;
+    animation: dropdown 1s;
     width: 100%;
     height: 100%;
 }
