@@ -12,7 +12,6 @@
 		"format": "biome format --write ./src ./404.html ./*.js ./*.json ./*.cjs"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.9.4",
 		"@fullhuman/postcss-purgecss": "^6.0.0",
 		"@sveltejs/adapter-static": "^3.0.5",
 		"@sveltejs/kit": "^2.7.2",
