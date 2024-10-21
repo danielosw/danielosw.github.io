@@ -1,11 +1,18 @@
 const purgecss = require("@fullhuman/postcss-purgecss");
 const postcssPresetEnv = require("postcss-preset-env");
+const postcssSimpleVars = require('postcss-simple-vars');
+const postcssImport = require("postcss-import");
+const postcssNesting = require("postcss-nesting");
+const postcssMixins = require('postcss-mixins');
+const tailwindcss = require("tailwindcss");
+const cssnano = require("cssnano");
 module.exports = {
 	plugins: [
-		require("postcss-import"),
-		require("postcss-nesting"),
-		require("tailwindcss"),
-		require('postcss-mixins'),
+		postcssImport(),
+		postcssMixins(),
+		postcssNesting(),
+		tailwindcss(),
+		postcssSimpleVars(),
 		postcssPresetEnv({
 			/* pluginOptions */
 			stage: 3,
@@ -18,7 +25,7 @@ module.exports = {
 
 			defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
 		}),
-		require("cssnano")({
+		cssnano({
 			preset: "advanced",
 		}),
 	],
