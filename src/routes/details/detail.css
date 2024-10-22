@@ -1,4 +1,6 @@
 @import "$lib/css/app.css";
+@import "$lib/animations/fade.css";
+@mixin fade 1;
 .blogwrap {
 	@apply centergrid;
 	position: absolute;
@@ -15,4 +17,9 @@
 	@apply centergrid;
 	top: 30%;
 	left: 30%;
+}
+.mainwrap{
+	@apply flex;
+	@apply  max-w-full;
+	@apply  max-h-full;
 }

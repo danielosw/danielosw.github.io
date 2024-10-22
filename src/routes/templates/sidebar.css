@@ -28,5 +28,12 @@
 
 .droplink {
 	@apply w-20;
+	transition: inherit;
 	
+}
+.buttonbar{
+	@apply inline-block;
+	@apply  h-6;
+	@apply w-6;
+	@apply  stroke-current;
 }

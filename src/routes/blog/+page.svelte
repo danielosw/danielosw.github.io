@@ -1,7 +1,7 @@
 <script lang="ts">
 import Post from "../templates/posttemplate.svelte";
 </script>
-    <main class="flex max-w-full max-h-full">
+    <main class="mainwrap">
         <div class="virtgrid fade2s">
         <div class="blogwrap">
         <ul>

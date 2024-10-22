@@ -1,4 +1,7 @@
 @import "$lib/css/app.css";
+@import "$lib/animations/fade.css";
+@mixin fade 2;
+@mixin fade 1;
 .portwrap {
 	@apply centergrid;
 	position: absolute;
@@ -15,4 +18,27 @@
 	@apply centergrid;
 	top: 30%;
 	left: 30%;
+}
+.centergrid {
+	@apply grid;
+	@apply justify-center;
+	@apply self-center;
+	@apply items-center;
+	@apply text-center;
+	@apply relative;
+}
+.indiportwrap{
+    @apply centergrid;
+	@apply border;
+	@apply border-white;
+	position: relative;
+	min-width: 40vw;
+	min-height: fit-content;
+	max-width: 40vw;
+	max-height: fit-content;
+}
+.mainwrap{
+	@apply flex;
+	@apply  max-w-full;
+	@apply  max-h-full;
 }

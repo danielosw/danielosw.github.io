@@ -3,12 +3,7 @@
         animation: dropdown $(amount)s;
     }
 }
-@mixin drop 1;
-@mixin drop 1.5;
-@mixin drop 2;
-.dropper{
-    transition: inherit;
-}
+
 .wrapper1{
     animation: dropdown 1s;
     width: 100%;

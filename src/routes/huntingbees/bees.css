@@ -1,4 +1,6 @@
 @import "$lib/css/app.css";
+@import "$lib/animations/fade.css";
+@mixin fade 2;
 .submit {
 	border-radius: 8px;
 	border: 1px solid transparent;

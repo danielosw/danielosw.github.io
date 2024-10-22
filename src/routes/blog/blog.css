@@ -1,4 +1,6 @@
 @import "$lib/css/app.css";
+@import "$lib/animations/fade.css";
+@mixin fade 2;
 .virtgrid {
 	@apply centergrid;
 	top: 30%;
@@ -25,4 +27,9 @@
 .title {
 	@apply text-green-500;
 	@apply text-2xl;
+}
+.mainwrap{
+	@apply flex;
+	@apply  max-w-full;
+	@apply  max-h-full;
 }

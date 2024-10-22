@@ -1,4 +1,10 @@
 @import "$lib/css/app.css";
+@import "$lib/animations/fade.css";
+@mixin fade 1;
+@mixin fade 2;
+@mixin fade 3;
+@mixin fade 4;
+@mixin fade 5;
 .menu {
 	@apply centergrid;
 	@apply max-h-min;

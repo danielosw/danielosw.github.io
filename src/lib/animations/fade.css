@@ -3,11 +3,6 @@
 		animation: fadein $(amount)s;
 	}
 }
-@mixin fade 1;
-@mixin fade 2;
-@mixin fade 3;
-@mixin fade 4;
-@mixin fade 5;
 @keyframes fadein {
 from {
 	opacity: 0;

@@ -18,7 +18,7 @@ const handleDropdownClick = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    class="inline-block h-6 w-6 stroke-current"
+                    class="buttonbar"
                 >
                     <title>Close Dropdown</title>
                     <path
@@ -33,7 +33,7 @@ const handleDropdownClick = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    class="inline-block h-6 w-6 stroke-current"
+                    class="buttonbar"
                 >
                     <title>Open Dropdown</title>
                     <path
@@ -47,10 +47,10 @@ const handleDropdownClick = () => {
         </button>
         <ul class="" style:display={isDropdownOpen ? 'inline' : 'none'}>
 		<div class="wrapper1">
-            <li class="droplink dropper fade1"><a href="/">Home</a></li>
-            <li class="droplink dropper fade2"><a href="/blog">Blogs</a></li>
-            <li class="droplink dropper fade3"><a href="/huntingbees">Calculators</a></li>
-            <li class="droplink dropper fade4"><a href="/portfolio">Portfolio</a></li>
+            <li class="droplink  fade1"><a href="/">Home</a></li>
+            <li class="droplink  fade2"><a href="/blog">Blogs</a></li>
+            <li class="droplink  fade3"><a href="/huntingbees">Calculators</a></li>
+            <li class="droplink  fade4"><a href="/portfolio">Portfolio</a></li>
         </div>
             </ul>
             <noscript>

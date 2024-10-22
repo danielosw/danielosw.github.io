@@ -2,7 +2,7 @@
 export let title = "temp";
 </script>
     <!-- -->
-<main class="flex max-w-full max-h-full">
+<main class="mainwrap">
     <div class="virtgrid">
     <div class="blogwrap">
     <h1 class="title fade1s">{title}</h1>
