@@ -11,6 +11,11 @@
 		"lint": "eslint .",
 		"format": "biome format --write ./src ./404.html ./*.js ./*.json ./*.cjs"
 	},
+	"browserslist": [
+		"last 1 version",
+		"> 1%",
+		"not dead"
+	],
 	"devDependencies": {
 		"@fullhuman/postcss-purgecss": "^6.0.0",
 		"@sveltejs/adapter-static": "^3.0.5",
@@ -39,5 +44,12 @@
 		"vite": "^5.4.9"
 	},
 	"type": "module",
-	"trustedDependencies": ["@biomejs/biome", "@sveltejs/kit", "esbuild"]
+	"trustedDependencies": [
+		"@biomejs/biome",
+		"@sveltejs/kit",
+		"esbuild"
+	],
+	"dependencies": {
+		"caniuse-lite": "^1.0.30001678"
+	}
 }
