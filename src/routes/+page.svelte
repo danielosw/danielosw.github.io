@@ -5,20 +5,20 @@ import "./index.css";
     <div class="menu">
         <ul>
         <li>
-            <p class="small-button fade1s bg-purple-500">
+            <p class="text-item fade1s">
             Hello! I am Daniel, and welcome to my site.
         </p></li>
         <li>
-            <div class="small-button fade2s bg-violet-500">
+            <div class="text-item fade2s">
                 My Projects
             </div></li>
-            <li class="bg-red-500 fade3s small-button">
+            <li class="link-item fade3s">
                 <a href="/huntingbees"> fallen london calculators</a>
             </li>
-            <li class="bg-red-500 fade4s small-button">
+            <li class="link-item fade4s">
                 <a href="/blog"> My blog</a>
             </li>
-            <li class="bg-red-500 fade5s small-button">
+            <li class="link-item fade5s">
                 <a href="/portfolio"> My portfolio</a>
             </li>
         </ul>

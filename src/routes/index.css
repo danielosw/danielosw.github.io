@@ -5,20 +5,33 @@
 @mixin fade 3;
 @mixin fade 4;
 @mixin fade 5;
+
 .menu {
 	@apply centergrid;
 	@apply max-h-min;
 	@apply min-h-fit;
 }
 
-.button {
+
+.small-button {
+	@apply px-2;
+	@apply py-1;
 	@apply text-white;
 	@apply text-center;
 	@apply rounded-full;
 }
 
-.small-button {
-	@apply button;
-	@apply px-2;
-	@apply py-1;
+.link-item {
+	background-color: #0F172A;
+	@apply small-button;
+
+	&a:link,
+	a:visited {
+		color: #65C44F;
+	}
+}
+
+.text-item {
+	@apply bg-purple-500;
+	@apply small-button;
 }
