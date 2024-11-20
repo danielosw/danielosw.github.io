@@ -1,0 +1,8 @@
+@define-mixin gloss $r, $g, $b {
+	.gloss{
+		background-color: rgba($r, $g, $b, .15);  
+
+		backdrop-filter: blur(5px);
+	   
+    }
+}

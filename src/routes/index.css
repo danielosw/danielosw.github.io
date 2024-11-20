@@ -1,11 +1,17 @@
 @import "$lib/css/app.css";
 @import "$lib/animations/fade.css";
+@import "$lib/css/gloss.css";
 @mixin fade 1;
 @mixin fade 2;
 @mixin fade 3;
 @mixin fade 4;
 @mixin fade 5;
-
+@mixin gloss 255, 255, 255;
+.gloss{
+	@apply rounded-full;
+	@apply px-2;
+	@apply py-1;
+}
 .menu {
 	@apply centergrid;
 	@apply max-h-min;
@@ -23,7 +29,10 @@
 
 .link-item {
 	background-color: #0F172A;
-	@apply small-button;
+	@apply text-white;
+	@apply text-center;
+	@apply min-w-full;
+	@apply min-h-full;
 
 	&a:link,
 	a:visited {
