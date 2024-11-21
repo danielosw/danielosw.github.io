@@ -4,7 +4,7 @@ import "$lib/animations/dropdown.css";
 let isDropdownOpen = false; // default state (dropdown close)
 
 const handleDropdownClick = () => {
-	isDropdownOpen = !isDropdownOpen; // togle state on click
+	isDropdownOpen = !isDropdownOpen; // toggle state on click
 };
 
 </script>
