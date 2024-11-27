@@ -1,4 +1,4 @@
-const purgecss = require("@fullhuman/postcss-purgecss");
+const  {purgeCSSPlugin} = require("@fullhuman/postcss-purgecss");
 const postcssPresetEnv = require("postcss-preset-env");
 const postcssSimpleVars = require('postcss-simple-vars');
 const postcssImport = require("postcss-import");
@@ -18,7 +18,7 @@ module.exports = {
 			stage: 3,
 			autoprefixer: { grid: false },
 		}),
-		purgecss({
+		purgeCSSPlugin({
 			content: ["./src/**/*.html", "./src/**/*.svelte"],
 			css: ["./**/*.css"],
 			//defaultExtractor: (content) => content.match("class=\"([\\w\\-/: ]+)\"(?<!:)|id=\"([\\w\\-/: ]+)\"(?<!:)|<([\\w\\-/: ]+) (?<!:)|<\\/([\\w\\-/: ]+)>(?<!:)") || [],
