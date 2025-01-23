@@ -1,11 +1,15 @@
-@import 'tailwindcss';
-
 .footer {
-	@apply grid;
+	display: grid;
+
 	animation: fadein 4s;
-	@apply text-center;
-	@apply fixed;
-	@apply bottom-5;
+	text-align: center;
+
+	position: fixed;
+
+	bottom: 1.25rem
+		/* 20px */
+	;
+
 	width: 100%;
 	left: 0%;
 }

@@ -1,13 +1,21 @@
-@import 'tailwindcss';
-
 .barwrap {
-	@apply grid;
+	display: grid;
+
 	animation: fadein 4s;
-	@apply text-center;
-	@apply fixed;
-	@apply top-5;
-	@apply left-10;
-	@apply text-center;
+	text-align: center;
+
+	position: fixed;
+
+	top: 1.25rem
+		/* 20px */
+	;
+
+	left: 2.5rem
+		/* 40px */
+	;
+
+	text-align: center;
+
 	width: 5%;
 }
 
@@ -38,14 +46,25 @@
 }
 
 .droplink {
-	@apply w-20;
+	width: 5rem
+		/* 80px */
+	;
+
 	transition: inherit;
 
 }
 
 .buttonbar {
-	@apply inline-block;
-	@apply h-6;
-	@apply w-6;
-	@apply stroke-current;
+	display: inline-block;
+
+	height: 1.5rem
+		/* 24px */
+	;
+
+	width: 1.5rem
+		/* 24px */
+	;
+
+	stroke: currentColor;
+
 }
