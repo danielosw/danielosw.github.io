@@ -1,30 +1,74 @@
-@import "$lib/css/app.css";
-@import "$lib/animations/fade.css";
-@import "$lib/css/gloss.css";
-@mixin fade 1;
-@mixin fade 2;
-@mixin fade 3;
-@mixin fade 4;
-@mixin fade 5;
-@mixin gloss 255, 255, 255;
-.gloss{
-	@apply rounded-full;
+@import '$lib/css/app.css';
+
+
+
+.fade1s {
+	animation: fadein 1s;
+}
+
+
+
+.fade2s {
+	animation: fadein 2s;
+}
+
+
+
+.fade3s {
+	animation: fadein 3s;
+}
+
+
+
+.fade4s {
+	animation: fadein 4s;
+}
+
+
+
+.fade5s {
+	animation: fadein 5s;
+}
+
+
+.gloss {
+	background-color: rgba(255, 255, 255, .15);
+
+	backdrop-filter: blur(5px);
+
+}
+
+
+.gloss {
+	border-radius: 9999px;
+
 	@apply px-2;
 	@apply py-1;
 }
+
 .menu {
 	@apply centergrid;
 	@apply max-h-min;
 	@apply min-h-fit;
 }
 
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
 
-.small-button {
+	to {
+		opacity: 1;
+	}
+}
+
+@utility small-button {
 	@apply px-2;
 	@apply py-1;
 	@apply text-white;
 	@apply text-center;
-	@apply rounded-full;
+	border-radius: 9999px;
+
 }
 
 .link-item {

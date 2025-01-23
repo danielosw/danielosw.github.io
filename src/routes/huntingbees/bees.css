@@ -1,29 +1,50 @@
-@import "$lib/css/app.css";
-@import "$lib/animations/fade.css";
-@mixin fade 2;
+@import '$lib/css/app.css';
+
+.fade2s {
+	animation: fadein 2s;
+}
+
+
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
 .submit {
 	border-radius: 8px;
 	border: 1px solid transparent;
 	@apply small-button;
-	@apply rounded-md;
+	border-radius: 0.375rem;
 	font-family: inherit;
 	background-color: #1a1a1a;
 	cursor: pointer;
 	transition: border-color 0.25s;
+
 	&:hover {
 		border-color: #646cff;
 	}
+
 	&:focus-visible &:focus {
 		outline: 4px auto -webkit-focus-ring-color;
 	}
 }
-.button {
+
+
+@utility button {
 	@apply text-white;
 	@apply text-center;
-	@apply rounded-full;
+	border-radius: 9999px;
+
 }
 
-.small-button {
+
+@utility small-button {
 	@apply button;
 	@apply px-2;
 	@apply py-1;

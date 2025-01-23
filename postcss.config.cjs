@@ -1,18 +1,28 @@
-const  {purgeCSSPlugin} = require("@fullhuman/postcss-purgecss");
+const { purgeCSSPlugin } = require("@fullhuman/postcss-purgecss");
 const postcssPresetEnv = require("postcss-preset-env");
 const postcssSimpleVars = require('postcss-simple-vars');
-const postcssImport = require("postcss-import");
+
 const postcssNesting = require("postcss-nesting");
-const postcssMixins = require('postcss-mixins');
-const tailwindcss = require("tailwindcss");
+const tailwindcss = require("@tailwindcss/postcss");
 const cssnano = require("cssnano");
 module.exports = {
 	plugins: [
-		postcssImport(),
-		postcssMixins(),
-		postcssNesting(),
-		tailwindcss(),
+		tailwindcss({
+			content: ["./src/**/*.{html,js,svelte,ts}",
+				"./src/routes/**/*.{html,js,svelte,ts}",],
+			theme: {
+				extend: {},
+			},
+			plugins: [],
+		}),
 		postcssSimpleVars(),
+
+
+
+
+		postcssNesting(),
+
+
 		postcssPresetEnv({
 			/* pluginOptions */
 			stage: 3,

@@ -1,6 +1,21 @@
-@import "$lib/css/app.css";
-@import "$lib/animations/fade.css";
-@mixin fade 1;
+@import '$lib/css/app.css';
+
+.fade1s {
+	animation: fadein 1s;
+}
+
+
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
 .blogwrap {
 	@apply centergrid;
 	position: absolute;
@@ -9,17 +24,20 @@
 	overflow: hidden;
 	@apply scroll-pb-10;
 }
+
 .title {
 	@apply text-green-500;
 	@apply text-2xl;
 }
+
 .virtgrid {
 	@apply centergrid;
 	top: 30%;
 	left: 30%;
 }
-.mainwrap{
+
+.mainwrap {
 	@apply flex;
-	@apply  max-w-full;
-	@apply  max-h-full;
+	@apply max-w-full;
+	@apply max-h-full;
 }
