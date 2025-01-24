@@ -9,7 +9,6 @@
 		"@tailwindcss/postcss": "^4.0.0",
 		"@types/eslint": "^9.6.1",
 		"autoprefixer": "^10.4.20",
-		"caniuse-lite": "^1.0.30001695",
 		"cssnano": "^7.0.6",
 		"cssnano-preset-advanced": "^7.0.6",
 		"eslint": "^9.18.0",
