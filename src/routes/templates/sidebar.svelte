@@ -6,7 +6,6 @@ let isDropdownOpen = false; // default state (dropdown close)
 const handleDropdownClick = () => {
 	isDropdownOpen = !isDropdownOpen; // toggle state on click
 };
-
 </script>
 
 <div class="barwrap">

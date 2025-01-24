@@ -1,8 +1,8 @@
 <script lang="ts">
-    export let title = "placeholder";
-    export let href = "placeholder";
-    export let imgsrc = "placeholder";
-    export let alt = "placeholder";
+export let title = "placeholder";
+export let href = "placeholder";
+export let imgsrc = "placeholder";
+export let alt = "placeholder";
 </script>
 <div class="fade1s indiportwrap">
     <a {href}>

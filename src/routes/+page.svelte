@@ -1,6 +1,6 @@
 <script lang="ts">
-    import "./index.css";
-    import Gloss from "$lib/templates/gloss.svelte";
+import "./index.css";
+import Gloss from "$lib/templates/gloss.svelte";
 </script>
 
 <main class="">

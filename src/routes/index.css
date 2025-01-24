@@ -1,43 +1,30 @@
-@import '$lib/css/app.css';
-
-
+@import "$lib/css/app.css";
 
 .fade1s {
 	animation: fadein 1s;
 }
 
-
-
 .fade2s {
 	animation: fadein 2s;
 }
-
-
 
 .fade3s {
 	animation: fadein 3s;
 }
 
-
-
 .fade4s {
 	animation: fadein 4s;
 }
-
-
 
 .fade5s {
 	animation: fadein 5s;
 }
 
-
 .gloss {
-	background-color: rgba(255, 255, 255, .15);
+	background-color: rgba(255, 255, 255, 0.15);
 
 	backdrop-filter: blur(5px);
-
 }
-
 
 .gloss {
 	border-radius: 9999px;
@@ -68,11 +55,10 @@
 	@apply text-white;
 	@apply text-center;
 	border-radius: 9999px;
-
 }
 
 .link-item {
-	background-color: #0F172A;
+	background-color: #0f172a;
 	@apply text-white;
 	@apply text-center;
 	@apply min-w-full;
@@ -80,7 +66,7 @@
 
 	&a:link,
 	a:visited {
-		color: #65C44F;
+		color: #65c44f;
 	}
 }
 

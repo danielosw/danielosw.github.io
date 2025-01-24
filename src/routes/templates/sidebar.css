@@ -6,13 +6,11 @@
 
 	position: fixed;
 
-	top: 1.25rem
-		/* 20px */
-	;
+	top: 1.25rem;
+	/* 20px */
 
-	left: 2.5rem
-		/* 40px */
-	;
+	left: 2.5rem;
+	/* 40px */
 
 	text-align: center;
 
@@ -46,25 +44,20 @@
 }
 
 .droplink {
-	width: 5rem
-		/* 80px */
-	;
+	width: 5rem;
+	/* 80px */
 
 	transition: inherit;
-
 }
 
 .buttonbar {
 	display: inline-block;
 
-	height: 1.5rem
-		/* 24px */
-	;
+	height: 1.5rem;
+	/* 24px */
 
-	width: 1.5rem
-		/* 24px */
-	;
+	width: 1.5rem;
+	/* 24px */
 
 	stroke: currentColor;
-
 }

@@ -46,10 +46,6 @@
 		"lint": "eslint .",
 		"format": "biome format --write ./src ./404.html ./*.js ./*.json ./*.cjs"
 	},
-	"trustedDependencies": [
-		"@biomejs/biome",
-		"@sveltejs/kit",
-		"esbuild"
-	],
+	"trustedDependencies": ["@biomejs/biome", "@sveltejs/kit", "esbuild"],
 	"type": "module"
 }
