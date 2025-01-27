@@ -1,45 +1,45 @@
 <script lang="ts">
-	let holder: number = 0;
-	let placenum: number = 0;
-	let bees: number = placenum * 25;
-	let hints: number = notzero(Math.floor(10 * (bees - 50)));
-	let clues: number = cluesget(hints);
-	let secrets: number = secretsget(clues);
-	let tales: number = talesget(secrets);
-	let implications: number = implicationsget(tales);
-	let incunabulums: number = incunabulumsget(implications);
-	function calc() {
-		placenum = holder;
-		bees = placenum * 25;
-		hints = notzero(Math.floor(10 * (bees - 50)));
-		clues = cluesget(hints);
-		secrets = secretsget(clues);
-		tales = talesget(secrets);
-		implications = implicationsget(tales);
-		incunabulums = incunabulumsget(implications);
+let holder: number = 0;
+let placenum: number = 0;
+let bees: number = placenum * 25;
+let hints: number = notzero(Math.floor(10 * (bees - 50)));
+let clues: number = cluesget(hints);
+let secrets: number = secretsget(clues);
+let tales: number = talesget(secrets);
+let implications: number = implicationsget(tales);
+let incunabulums: number = incunabulumsget(implications);
+function calc() {
+	placenum = holder;
+	bees = placenum * 25;
+	hints = notzero(Math.floor(10 * (bees - 50)));
+	clues = cluesget(hints);
+	secrets = secretsget(clues);
+	tales = talesget(secrets);
+	implications = implicationsget(tales);
+	incunabulums = incunabulumsget(implications);
+}
+function incunabulumsget(implications: number): number {
+	return Math.floor(implications / 25) * 5;
+}
+function implicationsget(tales: number): number {
+	return Math.floor(tales / 50) * 10;
+}
+function talesget(secrets: number): number {
+	return Math.floor(secrets / 333) * 105;
+}
+function secretsget(clues: number): number {
+	return Math.floor(clues / 500) * 70;
+}
+function cluesget(hints: number): number {
+	return Math.floor(hints / 500) * 200;
+}
+function notzero(num: number): number {
+	if (num < 0) {
+		return 0;
+	} else {
+		return num;
 	}
-	function incunabulumsget(implications: number): number {
-		return Math.floor(implications / 25) * 5;
-	}
-	function implicationsget(tales: number): number {
-		return Math.floor(tales / 50) * 10;
-	}
-	function talesget(secrets: number): number {
-		return Math.floor(secrets / 333) * 105;
-	}
-	function secretsget(clues: number): number {
-		return Math.floor(clues / 500) * 70;
-	}
-	function cluesget(hints: number): number {
-		return Math.floor(hints / 500) * 200;
-	}
-	function notzero(num: number): number {
-		if (num < 0) {
-			return 0;
-		} else {
-			return num;
-		}
-	}
+}
 </script>
 
 <main class="">
