@@ -1,0 +1,15 @@
+.wrapper1 {
+	animation: dropdown 1s;
+	width: 100%;
+	height: 100%;
+}
+
+@keyframes dropdown {
+	from {
+		transform: translatey(-50%);
+	}
+
+	to {
+		transform: translatey(0%);
+	}
+}

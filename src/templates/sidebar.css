@@ -1,0 +1,63 @@
+.barwrap {
+	display: grid;
+
+	animation: fadein 4s;
+	text-align: center;
+
+	position: fixed;
+
+	top: 1.25rem;
+	/* 20px */
+
+	left: 2.5rem;
+	/* 40px */
+
+	text-align: center;
+
+	width: 5%;
+}
+
+.fade1 {
+	animation: fadein 1.1s;
+}
+
+.fade2 {
+	animation: fadein 1.6s;
+}
+
+.fade3 {
+	animation: fadein 2.1s;
+}
+
+.fade4 {
+	animation: fadein 2.6s;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.droplink {
+	width: 5rem;
+	/* 80px */
+
+	transition: inherit;
+}
+
+.buttonbar {
+	display: inline-block;
+
+	height: 1.5rem;
+	/* 24px */
+
+	width: 1.5rem;
+	/* 24px */
+
+	stroke: currentColor;
+}

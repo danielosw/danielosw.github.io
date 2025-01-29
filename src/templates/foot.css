@@ -1,0 +1,24 @@
+.footer {
+	display: grid;
+
+	animation: fadein 4s;
+	text-align: center;
+
+	position: fixed;
+
+	bottom: 1.25rem;
+	/* 20px */
+
+	width: 100%;
+	left: 0%;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
