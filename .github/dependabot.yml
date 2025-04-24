@@ -1,6 +1,4 @@
 version: 2
-on:
-  workflow_dispatch:
 updates:
   - package-ecosystem: "github-actions"
     directory: "/"
