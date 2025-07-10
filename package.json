@@ -4,7 +4,7 @@
 	"devDependencies": {
 		"@fullhuman/postcss-purgecss": "^7.0.2",
 		"@sveltejs/adapter-static": "^3.0.8",
-		"@sveltejs/kit": "^2.22.2",
+		"@sveltejs/kit": "^2.22.4",
 		"@sveltejs/vite-plugin-svelte": "^5.1.0",
 		"@tailwindcss/postcss": "^4.1.11",
 		"@types/eslint": "^9.6.1",
