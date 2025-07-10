@@ -1,5 +1,5 @@
 <script lang="ts">
-import Post from "../templates/posttemplate.svelte";
+	import Post from "../templates/posttemplate.svelte";
 </script>
 
 <main class="mainwrap">
@@ -11,4 +11,3 @@ import Post from "../templates/posttemplate.svelte";
 		</div>
 	</div>
 </main>
-

@@ -4,7 +4,7 @@
 	"devDependencies": {
 		"@fullhuman/postcss-purgecss": "^7.0.2",
 		"@sveltejs/adapter-static": "^3.0.8",
-		"@sveltejs/kit": "^2.22.2",
+		"@sveltejs/kit": "^2.22.5",
 		"@sveltejs/vite-plugin-svelte": "^5.1.0",
 		"@tailwindcss/postcss": "^4.1.11",
 		"@types/eslint": "^9.6.1",
@@ -19,7 +19,7 @@
 		"postcss-nesting": "^13.0.2",
 		"postcss-preset-env": "^10.2.4",
 		"postcss-simple-vars": "^7.0.1",
-		"svelte": "^5.35.4",
+		"svelte": "^5.35.5",
 		"svelte-check": "^4.2.2",
 		"svelte-preprocess": "^6.0.3",
 		"tailwindcss": "^4.1.11",

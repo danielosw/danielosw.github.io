@@ -1,45 +1,23 @@
 <script lang="ts">
-let holder: number = 0;
-let placenum: number = 0;
-let bees: number = placenum * 25;
-let hints: number = notzero(Math.floor(10 * (bees - 50)));
-let clues: number = cluesget(hints);
-let secrets: number = secretsget(clues);
-let tales: number = talesget(secrets);
-let implications: number = implicationsget(tales);
-let incunabulums: number = incunabulumsget(implications);
-function calc() {
-	placenum = holder;
-	bees = placenum * 25;
-	hints = notzero(Math.floor(10 * (bees - 50)));
-	clues = cluesget(hints);
-	secrets = secretsget(clues);
-	tales = talesget(secrets);
-	implications = implicationsget(tales);
-	incunabulums = incunabulumsget(implications);
-}
-function incunabulumsget(implications: number): number {
-	return Math.floor(implications / 25) * 5;
-}
-function implicationsget(tales: number): number {
-	return Math.floor(tales / 50) * 10;
-}
-function talesget(secrets: number): number {
-	return Math.floor(secrets / 333) * 105;
-}
-function secretsget(clues: number): number {
-	return Math.floor(clues / 500) * 70;
-}
-function cluesget(hints: number): number {
-	return Math.floor(hints / 500) * 200;
-}
-function notzero(num: number): number {
-	if (num < 0) {
-		return 0;
-	} else {
-		return num;
+	let holder: number = 0;
+	let placenum: number = 0;
+	let bees: number = placenum * 25;
+	let hints: number = Math.max(Math.floor(10 * (bees - 50)), 0);
+	let clues: number = Math.floor(hints / 500) * 200;
+	let secrets: number = Math.floor(clues / 500) * 70;
+	let tales: number = Math.floor(secrets / 333) * 105;
+	let implications: number = Math.floor(tales / 50) * 10;
+	let incunabulums: number = Math.floor(implications / 25) * 5;
+	function calc() {
+		placenum = holder;
+		bees = placenum * 25;
+		hints = Math.max(Math.floor(10 * (bees - 50)), 0);
+		clues = Math.floor(hints / 500) * 200;
+		secrets = Math.floor(clues / 500) * 70;
+		tales = Math.floor(secrets / 333) * 105;
+		implications = Math.floor(tales / 50) * 10;
+		incunabulums = Math.floor(implications / 25) * 5;
 	}
-}
 </script>
 
 <main class="">
@@ -48,12 +26,14 @@ function notzero(num: number): number {
 			<li>
 				<p>
 					This assumes your only using <a
-						href="https://fallenlondon.wiki/wiki/Set_an_ambush">set an ambush</a
+						href="https://fallenlondon.wiki/wiki/Set_an_ambush"
+						>set an ambush</a
 					>
 					or
-					<a href="https://fallenlondon.wiki/wiki/Sow_carnage">sow carnage</a>,
-					that your success chance is 100% and that you are only bulk
-					converting.
+					<a href="https://fallenlondon.wiki/wiki/Sow_carnage"
+						>sow carnage</a
+					>, that your success chance is 100% and that you are only
+					bulk converting.
 				</p>
 			</li>
 			<li>
@@ -64,7 +44,8 @@ function notzero(num: number): number {
 						placeholder="enter bee amount"
 						class="small-button"
 					/>
-					<button disabled={!holder} type="submit" class="submit">Submit</button
+					<button disabled={!holder} type="submit" class="submit"
+						>Submit</button
 					>
 				</form>
 			</li>

@@ -1,8 +1,7 @@
 <script lang="ts">
-export let i = "";
+	export let i = "";
 </script>
 
-<!-- -->
 <main class="">
 	<div class={i}>
 		<slot class=""></slot>

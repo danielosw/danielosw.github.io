@@ -1,4 +1,5 @@
 <script lang="ts">
-import "./blog.css";
+	import "./blog.css";
 </script>
-    <slot></slot>
+
+<slot></slot>
