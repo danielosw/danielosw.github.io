@@ -16,7 +16,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest # Linux base image
     steps:
-      - uses: actions/checkout@v4 # Checkout repo
+      - uses: actions/checkout@v5 # Checkout repo
       - uses: oven-sh/setup-bun@v2 # Setup bun
         with:
             bun-version: latest # You can also use a specific version
