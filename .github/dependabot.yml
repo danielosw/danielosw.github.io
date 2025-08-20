@@ -6,9 +6,9 @@ updates:
       interval: "weekly"
   - package-ecosystem: bun
     directory: "/"
-    schedule:
-      interval: "daily
     groups:
     all:
       patterns:
         - "*"
+    schedule:
+      interval: "daily"
