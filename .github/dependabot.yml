@@ -7,8 +7,8 @@ updates:
   - package-ecosystem: bun
     directory: "/"
     groups:
-    all:
-      patterns:
-        - "*"
+      all:
+        patterns:
+          - "*"
     schedule:
       interval: "daily"
