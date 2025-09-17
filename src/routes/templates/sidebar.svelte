@@ -31,13 +31,5 @@
 				</li>
 			</div>
 		</ul>
-		<noscript>
-			<ul class="">
-				<li class="droplink"><a href="/">Home</a></li>
-				<li class="droplink"><a href="/blog">Blogs</a></li>
-				<li class="droplink"><a href="/huntingbees">Calculators</a></li>
-				<li class="droplink"><a href="/portfolio">Portfolio</a></li>
-			</ul>
-		</noscript>
 	</div>
 </div>
