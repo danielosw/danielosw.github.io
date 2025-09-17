@@ -1,13 +1,15 @@
 <script lang="ts">
-	let holder: number = 0;
-	let placenum: number = 0;
-	let bees: number = placenum * 25;
-	let hints: number = Math.max(Math.floor(10 * (bees - 50)), 0);
-	let clues: number = Math.floor(hints / 500) * 200;
-	let secrets: number = Math.floor(clues / 500) * 70;
-	let tales: number = Math.floor(secrets / 333) * 105;
-	let implications: number = Math.floor(tales / 50) * 10;
-	let incunabulums: number = Math.floor(implications / 25) * 5;
+	import { preventDefault } from "svelte/legacy";
+
+	let holder: number = $state(0);
+	let placenum: number = $state(0);
+	let bees: number = $state(0);
+	let hints: number = $state(0);
+	let clues: number = $state(0);
+	let secrets: number = $state(0);
+	let tales: number = $state(0);
+	let implications: number = $state(0);
+	let incunabulums: number = $state(0);
 	function calc() {
 		placenum = holder;
 		bees = placenum * 25;
@@ -38,7 +40,7 @@
 			</li>
 			<li>
 				<br />
-				<form on:submit|preventDefault={calc}>
+				<form onsubmit={preventDefault(calc)}>
 					<input
 						bind:value={holder}
 						placeholder="enter bee amount"

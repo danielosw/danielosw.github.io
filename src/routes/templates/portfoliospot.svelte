@@ -1,8 +1,19 @@
 <script lang="ts">
-	export let title = "placeholder";
-	export let href = "placeholder";
-	export let imgsrc = "placeholder";
-	export let alt = "placeholder";
+	interface Props {
+		title?: string;
+		href?: string;
+		imgsrc?: string;
+		alt?: string;
+		children?: import('svelte').Snippet;
+	}
+
+	let {
+		title = "placeholder",
+		href = "placeholder",
+		imgsrc = "placeholder",
+		alt = "placeholder",
+		children
+	}: Props = $props();
 </script>
 
 <div class="fade1s indiportwrap">
@@ -10,7 +21,7 @@
 		<img {alt} src={imgsrc} />
 		<h1>{title}</h1>
 		<p>
-			<slot></slot>
+			{@render children?.()}
 		</p>
 	</a>
 </div>
