@@ -1,23 +1,23 @@
 @import "$lib/css/app.css";
 
 .fade1s {
-	animation: fadein 1s;
+	animation: fadein 0.25s;
 }
 
 .fade2s {
-	animation: fadein 2s;
+	animation: fadein 0.5s;
 }
 
 .fade3s {
-	animation: fadein 3s;
+	animation: fadein 0.72s;
 }
 
 .fade4s {
-	animation: fadein 4s;
+	animation: fadein 1s;
 }
 
 .fade5s {
-	animation: fadein 5s;
+	animation: fadein 1.25s;
 }
 
 .gloss {
