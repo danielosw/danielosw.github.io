@@ -4,14 +4,14 @@
 	"devDependencies": {
 		"@fullhuman/postcss-purgecss": "^7.0.2",
 		"@sveltejs/adapter-static": "^3.0.10",
-		"@sveltejs/kit": "^2.43.7",
+		"@sveltejs/kit": "^2.43.8",
 		"@sveltejs/vite-plugin-svelte": "^6.2.1",
 		"@tailwindcss/postcss": "^4.1.14",
 		"@types/eslint": "^9.6.1",
 		"autoprefixer": "^10.4.21",
 		"cssnano": "^7.1.1",
 		"cssnano-preset-advanced": "^7.0.9",
-		"eslint": "^9.36.0",
+		"eslint": "^9.37.0",
 		"eslint-plugin-svelte": "^3.12.4",
 		"globals": "^16.4.0",
 		"postcss": "^8.5.6",
@@ -25,7 +25,7 @@
 		"tailwindcss": "^4.1.14",
 		"typescript": "^5.9.3",
 		"typescript-eslint": "^8.45.0",
-		"vite": "^7.1.8"
+		"vite": "^7.1.9"
 	},
 	"browserslist": [
 		"partially supports es6 and > 0.5% and fully supports css3-colors",
@@ -53,6 +53,6 @@
 	],
 	"type": "module",
 	"dependencies": {
-		"caniuse-lite": "^1.0.30001746"
+		"caniuse-lite": "^1.0.30001747"
 	}
 }
