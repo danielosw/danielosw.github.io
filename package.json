@@ -50,7 +50,7 @@
 		"lint": "eslint .",
 		"format": "biome format --write ./src ./404.html ./*.js ./*.json ./*.cjs",
 		"test:unit": "vitest",
-		"test": "npm run test:unit -- --run"
+		"test": "vitest run"
 	},
 	"trustedDependencies": [
 		"@biomejs/biome",
