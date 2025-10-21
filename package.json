@@ -8,12 +8,14 @@
 		"@sveltejs/vite-plugin-svelte": "^6.2.1",
 		"@tailwindcss/postcss": "^4.1.15",
 		"@types/eslint": "^9.6.1",
+		"@vitest/browser": "^3.2.4",
 		"autoprefixer": "^10.4.21",
 		"cssnano": "^7.1.1",
 		"cssnano-preset-advanced": "^7.0.9",
 		"eslint": "^9.38.0",
 		"eslint-plugin-svelte": "^3.12.5",
 		"globals": "^16.4.0",
+		"playwright": "^1.55.1",
 		"postcss": "^8.5.6",
 		"postcss-load-config": "^6.0.1",
 		"postcss-nesting": "^13.0.2",
@@ -25,7 +27,9 @@
 		"tailwindcss": "^4.1.15",
 		"typescript": "^5.9.3",
 		"typescript-eslint": "^8.46.2",
-		"vite": "^7.1.11"
+		"vite": "^7.1.11",
+		"vitest": "^3.2.4",
+		"vitest-browser-svelte": "^1.1.0"
 	},
 	"browserslist": [
 		"partially supports es6 and > 0.5% and fully supports css3-colors",
@@ -44,7 +48,9 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "eslint .",
-		"format": "biome format --write ./src ./404.html ./*.js ./*.json ./*.cjs"
+		"format": "biome format --write ./src ./404.html ./*.js ./*.json ./*.cjs",
+		"test:unit": "vitest",
+		"test": "npm run test:unit -- --run"
 	},
 	"trustedDependencies": [
 		"@biomejs/biome",
