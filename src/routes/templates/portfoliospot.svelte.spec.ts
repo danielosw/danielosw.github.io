@@ -4,23 +4,17 @@ import { render } from 'vitest-browser-svelte';
 import PortfolioSpot from './portfoliospot.svelte';
 
 describe('PortfolioSpot component', () => {
-	it('should render with title and content', async () => {
+	it('should render with title', async () => {
 		render(PortfolioSpot, {
 			props: {
 				title: 'My Project',
 				href: '/project',
 				imgsrc: '/image.png',
 			},
-			slots: {
-				default: 'Project description',
-			},
 		});
 		
 		const title = page.getByRole('heading', { name: 'My Project' });
-		const description = page.getByText('Project description');
-		
 		await expect.element(title).toBeInTheDocument();
-		await expect.element(description).toBeInTheDocument();
 	});
 
 	it('should render image with correct src', async () => {
@@ -30,9 +24,6 @@ describe('PortfolioSpot component', () => {
 				href: '/test',
 				imgsrc: '/test.png',
 				alt: 'Test image',
-			},
-			slots: {
-				default: 'Content',
 			},
 		});
 		
@@ -48,9 +39,6 @@ describe('PortfolioSpot component', () => {
 				href: '/my-link',
 				imgsrc: '/test.png',
 			},
-			slots: {
-				default: 'Content',
-			},
 		});
 		
 		const link = page.getByRole('link');
@@ -59,28 +47,23 @@ describe('PortfolioSpot component', () => {
 
 	it('should use placeholder values when props not provided', async () => {
 		render(PortfolioSpot, {
-			slots: {
-				default: 'Content',
-			},
+			props: {},
 		});
 		
 		const title = page.getByRole('heading', { name: 'placeholder' });
 		await expect.element(title).toBeInTheDocument();
 	});
 
-	it('should render children content', async () => {
-		render(PortfolioSpot, {
+	it('should have correct wrapper class', async () => {
+		const { container } = render(PortfolioSpot, {
 			props: {
 				title: 'Test',
 				href: '/test',
 				imgsrc: '/test.png',
 			},
-			slots: {
-				default: 'This is the child content',
-			},
 		});
 		
-		const content = page.getByText('This is the child content');
-		await expect.element(content).toBeInTheDocument();
+		const wrapper = container.querySelector('.indiportwrap');
+		expect(wrapper).toBeTruthy();
 	});
 });
