@@ -48,12 +48,11 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "eslint .",
-		"format": "biome format --write ./src ./404.html ./*.js ./*.json ./*.cjs",
+		"format": "eslint --fix .",
 		"test:unit": "vitest",
 		"test": "vitest run"
 	},
 	"trustedDependencies": [
-		"@biomejs/biome",
 		"@sveltejs/kit",
 		"esbuild"
 	],
