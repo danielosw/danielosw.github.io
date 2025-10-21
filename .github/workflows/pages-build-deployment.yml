@@ -15,6 +15,9 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest # Linux base image
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5 # Checkout repo
       - uses: oven-sh/setup-bun@v2 # Setup bun
