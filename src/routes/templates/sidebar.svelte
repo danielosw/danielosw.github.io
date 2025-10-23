@@ -6,6 +6,7 @@
 	const handleDropdownClick = () => {
 		isDropdownOpen = !isDropdownOpen; // toggle state on click
 	};
+	let { children }: Props = $props();
 </script>
 
 <div class="barwrap">
@@ -45,22 +46,12 @@
 		</button>
 		<ul class="" style:display={isDropdownOpen ? "inline" : "none"}>
 			<div class="wrapper1">
-				<li class="droplink fade1"><a href="/">Home</a></li>
-				<li class="droplink fade2"><a href="/blog">Blogs</a></li>
-				<li class="droplink fade3">
-					<a href="/huntingbees">Calculators</a>
-				</li>
-				<li class="droplink fade4">
-					<a href="/portfolio">Portfolio</a>
-				</li>
+				{@render children?.()}
 			</div>
 		</ul>
 		<noscript>
 			<ul class="">
-				<li class="droplink"><a href="/">Home</a></li>
-				<li class="droplink"><a href="/blog">Blogs</a></li>
-				<li class="droplink"><a href="/huntingbees">Calculators</a></li>
-				<li class="droplink"><a href="/portfolio">Portfolio</a></li>
+				{@render children?.()}
 			</ul>
 		</noscript>
 	</div>
