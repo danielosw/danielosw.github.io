@@ -19,4 +19,8 @@
 		<a href="/portfolio">Portfolio</a>
 	</li>
 </Sidebar>
-<Footer></Footer>
+<Footer
+	>All code is licenced under the AGPL 3.0, except samples, or when noted
+	otherwise. All non-code writings are under the Creative Commons
+	Attribution-ShareAlike 4.0 International, unless otherwise noted.</Footer
+>

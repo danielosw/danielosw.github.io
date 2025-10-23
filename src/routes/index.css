@@ -50,8 +50,7 @@
 	background-color: #0f172a;
 	@apply text-white;
 	@apply text-center;
-	@apply min-w-full;
-	@apply min-h-full;
+	@apply small-button;
 
 	&a:link,
 	a:visited {
