@@ -6,11 +6,14 @@
 	<div class="virtgrid fade2s">
 		<div class="portwrap">
 			<ul>
-				<Portspot title="ai thoughts" href="/" imgsrc="/favicon.png">
-					A post about my thoughts on ai.
+				<Portspot
+					title="this site"
+					href="./thissite"
+					imgsrc="/favicon.png"
+				>
+					This site!
 				</Portspot>
 			</ul>
 		</div>
 	</div>
 </main>
-
