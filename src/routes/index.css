@@ -20,18 +20,7 @@
 	animation: fadein 1.25s;
 }
 
-.gloss {
-	background-color: rgba(255, 255, 255, 0.15);
 
-	backdrop-filter: blur(5px);
-}
-
-.gloss {
-	border-radius: 9999px;
-
-	@apply px-2;
-	@apply py-1;
-}
 
 .menu {
 	@apply centergrid;
