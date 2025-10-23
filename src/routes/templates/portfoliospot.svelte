@@ -1,10 +1,9 @@
 <script lang="ts">
 	interface Props {
 		title?: string;
-		href?: string;
 		imgsrc?: string;
 		alt?: string;
-		children?: import('svelte').Snippet;
+		children?: import("svelte").Snippet;
 	}
 
 	let {
@@ -12,17 +11,18 @@
 		href = "placeholder",
 		imgsrc = "placeholder",
 		alt = "placeholder",
-		children
+		children,
 	}: Props = $props();
 </script>
 
 <div class="fade1s indiportwrap">
-	<a {href}>
+	<a href="/details/{title.replace(' ', '')}">
 		<img {alt} src={imgsrc} />
-		<h1>{title}</h1>
+		<h1>
+			{title}
+		</h1>
 		<p>
 			{@render children?.()}
 		</p>
 	</a>
 </div>
-

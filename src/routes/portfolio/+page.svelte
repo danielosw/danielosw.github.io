@@ -6,11 +6,7 @@
 	<div class="virtgrid fade2s">
 		<div class="portwrap">
 			<ul>
-				<Portspot
-					title="this site"
-					href="./thissite"
-					imgsrc="/favicon.png"
-				>
+				<Portspot title="this site" imgsrc="/favicon.png">
 					This site!
 				</Portspot>
 			</ul>
