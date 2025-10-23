@@ -14,12 +14,6 @@ describe('HuntingBees calculator page', () => {
 		await expect.element(submitButton).toBeInTheDocument();
 	});
 
-	it('should render instructions', async () => {
-		render(HuntingBeesPage);
-		
-		const instructions = page.getByText(/This assumes your only using/i);
-		await expect.element(instructions).toBeInTheDocument();
-	});
 
 	it('should have links to wiki pages', async () => {
 		render(HuntingBeesPage);

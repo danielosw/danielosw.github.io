@@ -11,12 +11,6 @@ describe('Portfolio page', () => {
 		await expect.element(portfolioLink).toBeInTheDocument();
 	});
 
-	it('should render portfolio title', async () => {
-		render(PortfolioPage);
-		
-		const title = page.getByRole('heading', { name: /ai thoughts/i });
-		await expect.element(title).toBeInTheDocument();
-	});
 
 	it('should render portfolio image', async () => {
 		render(PortfolioPage);

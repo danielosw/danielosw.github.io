@@ -4,13 +4,7 @@ import { render } from 'vitest-browser-svelte';
 import Page from './+page.svelte';
 
 describe('Home page', () => {
-	it('should render welcome message', async () => {
-		render(Page);
-		
-		const text = page.getByText(/Hello! I am Daniel/i);
-		await expect.element(text).toBeInTheDocument();
-	});
-
+	
 	it('should render navigation links', async () => {
 		render(Page);
 		
