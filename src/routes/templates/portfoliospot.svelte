@@ -16,7 +16,7 @@
 </script>
 
 <div class="fade1s indiportwrap">
-	<a href="/details/{title.replace(' ', '')}">
+	<a href="/portfolio/{title.replace(' ', '')}">
 		<img {alt} src={imgsrc} />
 		<h1>
 			{title}
