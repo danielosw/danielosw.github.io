@@ -1,17 +1,20 @@
 <script lang="ts">
 	import "./sidebar.css";
 	import "$lib/animations/dropdown.css";
-	let isDropdownOpen = false; // default state (dropdown close)
+	let isDropdownOpen = $state(false); // default state (dropdown close)
 
 	const handleDropdownClick = () => {
 		isDropdownOpen = !isDropdownOpen; // toggle state on click
 	};
+	interface Props {
+		children?: import("svelte").Snippet;
+	}
 	let { children }: Props = $props();
 </script>
 
 <div class="barwrap">
 	<div class="dropdown">
-		<button class=" m-1" on:click={handleDropdownClick}>
+		<button class=" m-1" onclick={handleDropdownClick}>
 			{#if isDropdownOpen}
 				<svg
 					xmlns="http://www.w3.org/2000/svg"

@@ -4,6 +4,7 @@ import { playwright } from '@vitest/browser-playwright'
 
 export default defineConfig({
 	plugins: [sveltekit()],
+	
 	test: {
 		expect: { requireAssertions: true },
 		projects: [
