@@ -8,7 +8,7 @@
 		"@sveltejs/vite-plugin-svelte": "^6.2.1",
 		"@tailwindcss/postcss": "^4.1.16",
 		"@types/eslint": "^9.6.1",
-		"@vitest/browser": "^4.0.1",
+		"@vitest/browser": "^4.0.2",
 		"autoprefixer": "^10.4.21",
 		"cssnano": "^7.1.1",
 		"cssnano-preset-advanced": "^7.0.9",
@@ -21,16 +21,16 @@
 		"postcss-nesting": "^13.0.2",
 		"postcss-preset-env": "^10.4.0",
 		"postcss-simple-vars": "^7.0.1",
-		"svelte": "^5.41.2",
+		"svelte": "^5.41.3",
 		"svelte-check": "^4.3.3",
 		"svelte-preprocess": "^6.0.3",
 		"tailwindcss": "^4.1.16",
 		"typescript": "^5.9.3",
 		"typescript-eslint": "^8.46.2",
 		"vite": "^7.1.12",
-		"vitest": "^4.0.1",
+		"vitest": "^4.0.2",
 		"vitest-browser-svelte": "^2.0.0",
-		"@vitest/browser-playwright": "^4.0.1"
+		"@vitest/browser-playwright": "^4.0.2"
 	},
 	"browserslist": [
 		"partially supports es6 and > 0.5% and fully supports css3-colors",
