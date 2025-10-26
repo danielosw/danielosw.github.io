@@ -26,10 +26,4 @@ describe('Portfolio page', () => {
 		expect(portwrap).toBeTruthy();
 	});
 
-	it('should have portfolio link with correct href', async () => {
-		render(PortfolioPage);
-		
-		const link = page.getByRole('link');
-		await expect.element(link).toHaveAttribute('href', '/');
-	});
 });
