@@ -8,7 +8,7 @@ describe('PortfolioSpot component', () => {
 		render(PortfolioSpot, {
 			props: {
 				title: 'My Project',
-				href: '/project',
+				href: '/portfolio/project',
 				imgsrc: '/image.png',
 			},
 		});
@@ -21,7 +21,7 @@ describe('PortfolioSpot component', () => {
 		render(PortfolioSpot, {
 			props: {
 				title: 'Test',
-				href: '/test',
+				href: '/portfolio/test',
 				imgsrc: '/test.png',
 				alt: 'Test image',
 			},
@@ -36,7 +36,7 @@ describe('PortfolioSpot component', () => {
 		render(PortfolioSpot, {
 			props: {
 				title: 'Test',
-				href: '/my-link',
+				href: '/portfolio/my-link',
 				imgsrc: '/test.png',
 			},
 		});
@@ -58,7 +58,7 @@ describe('PortfolioSpot component', () => {
 		const { container } = render(PortfolioSpot, {
 			props: {
 				title: 'Test',
-				href: '/test',
+				href: '/portfolio/test',
 				imgsrc: '/test.png',
 			},
 		});
