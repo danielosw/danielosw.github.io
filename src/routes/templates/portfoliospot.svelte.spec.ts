@@ -42,7 +42,7 @@ describe('PortfolioSpot component', () => {
 		});
 		
 		const link = page.getByRole('link');
-		await expect.element(link).toHaveAttribute('href', '/my-link');
+		await expect.element(link).toHaveAttribute('href', '/portfolio/Test');
 	});
 
 	it('should use placeholder values when props not provided', async () => {
