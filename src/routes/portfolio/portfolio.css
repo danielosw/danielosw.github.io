@@ -1,41 +1,58 @@
 @import "$lib/css/app.css";
 
 .fade2s {
-	animation: fadein 2;
+	animation: fadein 1s;
 }
 
 .fade1s {
-	animation: fadein 1;
+	animation: fadein 0.8s;
 }
 
 @keyframes fadein {
 	from {
 		opacity: 0;
+		transform: translateY(20px);
 	}
 
 	to {
 		opacity: 1;
+		transform: translateY(0);
 	}
 }
 
 .portwrap {
-	@apply centergrid;
-	position: absolute;
-	min-width: 40vw;
-	@apply top-5;
-	overflow: hidden;
-	@apply scroll-pb-10;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	justify-content: center;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem 1rem;
+}
+
+.portwrap ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	justify-content: center;
+	width: 100%;
 }
 
 .title {
-	@apply text-green-500;
-	@apply text-2xl;
+	color: #65c44f;
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin: 1rem 0;
 }
 
 .virtgrid {
 	@apply centergrid;
-	top: 30%;
-	left: 30%;
+	padding: 2rem;
+	margin-top: 2rem;
 }
 
 .centergrid {
@@ -48,19 +65,46 @@
 }
 
 .indiportwrap {
-	@apply centergrid;
-	der-width: 1px;
-	--tw-border-opacity: 1;
-	border-color: rgb(255 255 255 / var(--tw-border-opacity));
-	position: relative;
-	min-width: 40vw;
-	min-height: fit-content;
-	max-width: 40vw;
-	max-height: fit-content;
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	background-color: rgba(15, 23, 42, 0.5);
+	border-radius: 1rem;
+	padding: 1.5rem;
+	min-width: 250px;
+	max-width: 350px;
+	width: 100%;
+	transition: all 0.3s ease;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.indiportwrap:hover {
+	border-color: rgba(100, 108, 255, 0.5);
+	background-color: rgba(15, 23, 42, 0.7);
+	transform: translateY(-4px);
+	box-shadow: 0 8px 24px rgba(100, 108, 255, 0.2);
+}
+
+.indiportwrap a {
+	text-decoration: none;
+	color: inherit;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.indiportwrap img {
+	width: 100%;
+	max-width: 150px;
+	height: auto;
+	border-radius: 0.5rem;
+	margin-bottom: 1rem;
 }
 
 .mainwrap {
 	@apply flex;
 	@apply max-w-full;
-	@apply max-h-full;
+	min-height: 100vh;
+	padding: 1rem 1rem 5rem 1rem;
 }

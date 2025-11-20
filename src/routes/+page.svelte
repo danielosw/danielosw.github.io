@@ -2,7 +2,7 @@
 	import "./index.css";
 </script>
 
-<main class="">
+<main class="main-home">
 	<div class="menu">
 		<ul>
 			<li>
