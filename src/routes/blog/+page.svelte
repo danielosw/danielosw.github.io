@@ -3,7 +3,7 @@
 </script>
 
 <main class="mainwrap">
-	<div class="virtgrid fade2s">
+	<div class="virtgrid">
 		<div class="blogwrap">
 			<ul>
 				<Post title="ai thoughts">A post about my thoughts on ai.</Post>

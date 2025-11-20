@@ -1,61 +1,102 @@
 .barwrap {
 	display: grid;
-
-	animation: fadein 4s;
 	text-align: center;
-
 	position: fixed;
-
 	top: 1.25rem;
-	/* 20px */
-
-	left: 2.5rem;
-	/* 40px */
-
-	width: 5%;
+	left: 1.5rem;
+	z-index: 1000;
 }
 
-.fade1 {
-	animation: fadein 1.1s;
-}
-
-.fade2 {
-	animation: fadein 1.6s;
-}
-
-.fade3 {
-	animation: fadein 2.1s;
-}
-
-.fade4 {
-	animation: fadein 2.6s;
-}
-
-@keyframes fadein {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
+@media (max-width: 640px) {
+	.barwrap {
+		left: 1rem;
+		top: 1rem;
 	}
 }
+
+
 
 .droplink {
 	width: 5rem;
-	/* 80px */
-
 	transition: inherit;
+	list-style: none;
+	padding: 0.5rem 0;
+}
+
+.droplink a {
+	display: block;
+	padding: 0.5rem 1rem;
+	color: #646cff;
+	text-decoration: none;
+}
+
+.droplink a:hover {
+	color: #535bf2;
 }
 
 .buttonbar {
 	display: inline-block;
-
 	height: 1.5rem;
-	/* 24px */
-
 	width: 1.5rem;
-	/* 24px */
-
 	stroke: currentColor;
+}
+
+/* Hide checkbox */
+.nav-toggle {
+	display: none;
+}
+
+/* Toggle label styling */
+.nav-toggle-label {
+	cursor: pointer;
+	display: inline-block;
+	padding: 0.5rem;
+	background-color: rgba(36, 36, 36, 0.8);
+	border-radius: 0.5rem;
+}
+
+.nav-toggle-label:hover {
+	background-color: rgba(50, 50, 50, 0.9);
+}
+
+/* Show hamburger by default, hide close icon */
+.nav-toggle-label .hamburger {
+	display: inline-block;
+}
+
+.nav-toggle-label .close-icon {
+	display: none;
+}
+
+/* When checked, show close icon and hide hamburger */
+.nav-toggle:checked ~ .nav-toggle-label .hamburger {
+	display: none;
+}
+
+.nav-toggle:checked ~ .nav-toggle-label .close-icon {
+	display: inline-block;
+}
+
+/* Hide menu by default */
+.nav-menu {
+	display: none;
+	position: absolute;
+	top: 3rem;
+	left: 0;
+	background-color: rgba(36, 36, 36, 0.95);
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	min-width: 10rem;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* Show menu when checkbox is checked */
+.nav-toggle:checked ~ .nav-menu {
+	display: block;
 }

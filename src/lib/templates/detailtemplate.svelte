@@ -11,8 +11,8 @@
 <main class="mainwrap">
 	<div class="virtgrid">
 		<div class="blogwrap">
-			<h1 class="title fade1s">{title}</h1>
-			<div class="fade2s">
+			<h1 class="title">{title}</h1>
+			<div>
 				{@render children?.({ class: "", })}
 			</div>
 		</div>

@@ -1,53 +1,66 @@
 @import "$lib/css/app.css";
 
-.fade2s {
-	animation: fadein 2s;
-}
 
-@keyframes fadein {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
 
 .virtgrid {
 	@apply centergrid;
-	top: 30%;
-	left: 30%;
+	padding: 2rem;
+	margin-top: 2rem;
 }
 
 .blogbox {
 	@apply centergrid;
-	border-width: 1px;
-	--tw-border-opacity: 1;
-	border-color: rgb(255 255 255 / var(--tw-border-opacity));
-	position: relative;
-	min-width: 40vw;
-	min-height: fit-content;
-	max-width: 40vw;
-	max-height: fit-content;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background-color: rgba(15, 23, 42, 0.5);
+	border-radius: 0.5rem;
+	padding: 2rem;
+	min-width: 300px;
+	max-width: 600px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.blogbox:hover {
+	border-color: rgba(168, 85, 247, 0.4);
 }
 
 .blogwrap {
-	@apply centergrid;
-	position: absolute;
-	min-width: 40vw;
-	@apply top-5;
-	overflow: hidden;
-	@apply scroll-pb-10;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.blogwrap ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
 }
 
 .title {
-	@apply text-green-500;
-	@apply text-2xl;
+	color: #65c44f;
+	font-size: 1.875rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.title a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.title a:hover {
+	color: #7dd85c;
 }
 
 .mainwrap {
 	@apply flex;
 	@apply max-w-full;
-	@apply max-h-full;
+	min-height: 100vh;
+	padding: 1rem 1rem 5rem 1rem;
 }

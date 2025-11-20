@@ -23,7 +23,7 @@
 </script>
 
 <main class="">
-	<div class="centergrid fade2s">
+	<div class="centergrid">
 		<ul>
 			<li>
 				<p>
