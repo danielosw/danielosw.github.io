@@ -1,6 +1,5 @@
 .footer {
 	display: grid;
-	animation: fadein 2s;
 	text-align: center;
 	position: fixed;
 	bottom: 0;
@@ -10,8 +9,7 @@
 	padding: 1rem;
 	font-size: 0.875rem;
 	color: rgba(255, 255, 255, 0.7);
-	border-top: 1px solid rgba(168, 85, 247, 0.3);
-	backdrop-filter: blur(10px);
+	border-top: 1px solid rgba(168, 85, 247, 0.2);
 }
 
 .footer p {
@@ -23,12 +21,10 @@
 
 @keyframes fadein {
 	from {
-		opacity: 0;
-		transform: translateY(20px);
+		opacity: 1;
 	}
 
 	to {
 		opacity: 1;
-		transform: translateY(0);
 	}
 }

@@ -1,6 +1,5 @@
 .barwrap {
 	display: grid;
-	animation: fadein 4s;
 	text-align: center;
 	position: fixed;
 	top: 1.25rem;
@@ -16,19 +15,19 @@
 }
 
 .fade1 {
-	animation: fadein 1.1s;
+	animation: none;
 }
 
 .fade2 {
-	animation: fadein 1.6s;
+	animation: none;
 }
 
 .fade3 {
-	animation: fadein 2.1s;
+	animation: none;
 }
 
 .fade4 {
-	animation: fadein 2.6s;
+	animation: none;
 }
 
 @keyframes fadein {
@@ -53,11 +52,9 @@
 	padding: 0.5rem 1rem;
 	color: #646cff;
 	text-decoration: none;
-	transition: background-color 0.3s;
 }
 
 .droplink a:hover {
-	background-color: rgba(100, 108, 255, 0.1);
 	color: #535bf2;
 }
 
@@ -80,11 +77,10 @@
 	padding: 0.5rem;
 	background-color: rgba(36, 36, 36, 0.8);
 	border-radius: 0.5rem;
-	transition: background-color 0.3s;
 }
 
 .nav-toggle-label:hover {
-	background-color: rgba(100, 108, 255, 0.2);
+	background-color: rgba(50, 50, 50, 0.9);
 }
 
 /* Show hamburger by default, hide close icon */
@@ -115,7 +111,7 @@
 	border-radius: 0.5rem;
 	padding: 0.5rem;
 	min-width: 10rem;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .nav-menu ul {

@@ -1,22 +1,20 @@
 @import "$lib/css/app.css";
 
 .fade2s {
-	animation: fadein 1s;
+	animation: none;
 }
 
 .fade1s {
-	animation: fadein 0.8s;
+	animation: none;
 }
 
 @keyframes fadein {
 	from {
-		opacity: 0;
-		transform: translateY(20px);
+		opacity: 1;
 	}
 
 	to {
 		opacity: 1;
-		transform: translateY(0);
 	}
 }
 
@@ -65,24 +63,20 @@
 }
 
 .indiportwrap {
-	border: 2px solid rgba(255, 255, 255, 0.2);
+	border: 1px solid rgba(255, 255, 255, 0.2);
 	background-color: rgba(15, 23, 42, 0.5);
-	border-radius: 1rem;
+	border-radius: 0.5rem;
 	padding: 1.5rem;
 	min-width: 250px;
 	max-width: 350px;
 	width: 100%;
-	transition: all 0.3s ease;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
 .indiportwrap:hover {
-	border-color: rgba(100, 108, 255, 0.5);
-	background-color: rgba(15, 23, 42, 0.7);
-	transform: translateY(-4px);
-	box-shadow: 0 8px 24px rgba(100, 108, 255, 0.2);
+	border-color: rgba(100, 108, 255, 0.4);
 }
 
 .indiportwrap a {
