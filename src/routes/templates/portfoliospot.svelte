@@ -15,7 +15,7 @@
 	}: Props = $props();
 </script>
 
-<div class="fade1s indiportwrap">
+<div class="indiportwrap">
 	<a href="/portfolio/{title.replace(' ', '')}">
 		<img {alt} src={imgsrc} />
 		<h1>

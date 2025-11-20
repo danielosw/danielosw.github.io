@@ -1,24 +1,6 @@
 @import "$lib/css/app.css";
 
-.fade1s {
-	animation: none;
-}
 
-.fade2s {
-	animation: none;
-}
-
-.fade3s {
-	animation: none;
-}
-
-.fade4s {
-	animation: none;
-}
-
-.fade5s {
-	animation: none;
-}
 
 .menu {
 	@apply centergrid;
@@ -57,15 +39,7 @@
 	}
 }
 
-@keyframes fadein {
-	from {
-		opacity: 1;
-	}
 
-	to {
-		opacity: 1;
-	}
-}
 
 @utility small-button {
 	@apply px-4;

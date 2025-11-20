@@ -6,20 +6,20 @@
 	<div class="menu">
 		<ul>
 			<li>
-				<p class="text-item fade1s">
+				<p class="text-item">
 					Hello! I am Daniel, and welcome to my site.
 				</p>
 			</li>
 			<li>
-				<div class="text-item fade2s">My Projects</div>
+				<div class="text-item">My Projects</div>
 			</li>
-			<li class="link-item fade3s">
+			<li class="link-item">
 				<a href="/huntingbees"> fallen london calculators</a>
 			</li>
-			<li class="link-item fade4s">
+			<li class="link-item">
 				<a href="/blog"> My blog</a>
 			</li>
-			<li class="link-item fade5s">
+			<li class="link-item">
 				<a href="/portfolio"> My portfolio</a>
 			</li>
 		</ul>

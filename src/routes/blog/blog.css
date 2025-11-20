@@ -1,18 +1,6 @@
 @import "$lib/css/app.css";
 
-.fade2s {
-	animation: none;
-}
 
-@keyframes fadein {
-	from {
-		opacity: 1;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
 
 .virtgrid {
 	@apply centergrid;

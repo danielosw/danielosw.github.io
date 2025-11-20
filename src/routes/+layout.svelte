@@ -10,12 +10,12 @@
 
 {@render children?.()}
 <Sidebar>
-	<li class="droplink fade1"><a href="/">Home</a></li>
-	<li class="droplink fade2"><a href="/blog">Blogs</a></li>
-	<li class="droplink fade3">
+	<li class="droplink"><a href="/">Home</a></li>
+	<li class="droplink"><a href="/blog">Blogs</a></li>
+	<li class="droplink">
 		<a href="/huntingbees">Calculators</a>
 	</li>
-	<li class="droplink fade4">
+	<li class="droplink">
 		<a href="/portfolio">Portfolio</a>
 	</li>
 </Sidebar>

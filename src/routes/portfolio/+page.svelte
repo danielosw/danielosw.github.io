@@ -3,7 +3,7 @@
 </script>
 
 <main class="mainwrap">
-	<div class="virtgrid fade2s">
+	<div class="virtgrid">
 		<div class="portwrap">
 			<ul>
 				<Portspot title="this site" imgsrc="/favicon.png">

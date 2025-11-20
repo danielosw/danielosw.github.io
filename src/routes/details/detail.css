@@ -1,19 +1,5 @@
 @import "$lib/css/app.css";
 
-.fade1s {
-	animation: fadein 1s;
-}
-
-@keyframes fadein {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
-
 .blogwrap {
 	@apply centergrid;
 	position: absolute;

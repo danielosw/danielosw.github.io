@@ -14,31 +14,7 @@
 	}
 }
 
-.fade1 {
-	animation: none;
-}
 
-.fade2 {
-	animation: none;
-}
-
-.fade3 {
-	animation: none;
-}
-
-.fade4 {
-	animation: none;
-}
-
-@keyframes fadein {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
 
 .droplink {
 	width: 5rem;
