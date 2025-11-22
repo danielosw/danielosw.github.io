@@ -21,7 +21,6 @@
 }
 
 .mainwrap {
-	@apply flex;
 	@apply max-w-full;
 	@apply max-h-full;
 }

@@ -28,7 +28,6 @@
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
-	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
 }
@@ -59,7 +58,6 @@
 }
 
 .mainwrap {
-	@apply flex;
 	@apply max-w-full;
 	min-height: 100vh;
 	padding: 1rem 1rem 5rem 1rem;

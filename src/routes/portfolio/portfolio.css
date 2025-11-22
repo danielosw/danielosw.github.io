@@ -81,7 +81,6 @@
 }
 
 .mainwrap {
-	@apply flex;
 	@apply max-w-full;
 	min-height: 100vh;
 	padding: 1rem 1rem 5rem 1rem;
