@@ -1,3 +1,9 @@
 {
-  "nodeModulesDir": "manual"
+  "nodeModulesDir": "manual",
+  "tasks": {
+    "build": "npx vite build",
+    "dev": "npx vite dev",
+    "lint": "npx eslint .",
+    "test": "npx vitest run"
+  }
 }
