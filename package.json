@@ -2,6 +2,7 @@
 	"name": "danielosw.github.io",
 	"version": "0.0.1",
 	"devDependencies": {
+		"@eslint/js": "^9.39.1",
 		"@fullhuman/postcss-purgecss": "^7.0.2",
 		"@sveltejs/adapter-static": "^3.0.10",
 		"@sveltejs/kit": "^2.49.0",

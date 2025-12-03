@@ -28,33 +28,26 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
       - name: Setup Deno
-        # You may pin to the exact commit or the version.
-        # uses: denoland/setup-deno@e95548e56dfa95d4e1a28d6f422fafe75c4c26fb
-        uses: denoland/setup-deno@v2.0.3
+        uses: denoland/setup-deno@v2
         with:
-          cache: true
-                
-      - name: Set up bun.js
-        uses: oven-sh/setup-bun@v2 # Setup bun
-        with:
-            bun-version: latest
+          deno-version: v2.x
 
-      - name: Cache Bun dependencies
+      - name: Cache Deno dependencies
         uses: actions/cache@v4
         with:
           path: |
-            ~/.bun/install/cache
+            ~/.cache/deno
             node_modules
-          key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lock') }}
+          key: ${{ runner.os }}-deno-${{ hashFiles('**/deno.lock', '**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-bun-
+            ${{ runner.os }}-deno-
 
       - name: Install JavaScript dependencies
-        run: bun install
+        run: deno install --allow-scripts
 
       - name: Get Playwright version
         id: playwright-version
-        run: echo "version=$(bunx playwright --version | grep -oP 'Version \K[0-9.]+')" >> $GITHUB_OUTPUT
+        run: echo "version=$(deno run -A npm:playwright --version | grep -oP 'Version \K[0-9.]+')" >> $GITHUB_OUTPUT
 
       - name: Cache Playwright browsers
         uses: actions/cache@v4
@@ -67,9 +60,9 @@ jobs:
 
       - name: Install Playwright browsers
         if: steps.playwright-cache.outputs.cache-hit != 'true'
-        run: bun x playwright install --with-deps firefox
+        run: deno run -A npm:playwright install --with-deps firefox
 
       - name: Install Playwright system dependencies
         if: steps.playwright-cache.outputs.cache-hit == 'true'
-        run: bun x playwright install-deps firefox
+        run: deno run -A npm:playwright install-deps firefox
         
