@@ -11,7 +11,7 @@
 		"@vitest/browser": "^4.0.15",
 		"@vitest/browser-playwright": "^4.0.15",
 		"autoprefixer": "^10.4.22",
-		"baseline-browser-mapping": "^2.8.32",
+		"baseline-browser-mapping": "^2.9.0",
 		"cssnano": "^7.1.2",
 		"cssnano-preset-advanced": "^7.0.10",
 		"eslint": "^9.39.1",
@@ -23,7 +23,7 @@
 		"postcss-nesting": "^13.0.2",
 		"postcss-preset-env": "^10.4.0",
 		"postcss-simple-vars": "^7.0.1",
-		"svelte": "^5.45.4",
+		"svelte": "^5.45.5",
 		"svelte-check": "^4.3.4",
 		"svelte-preprocess": "^6.0.3",
 		"tailwindcss": "^4.1.17",
@@ -60,6 +60,6 @@
 	],
 	"type": "module",
 	"dependencies": {
-		"caniuse-lite": "^1.0.30001757"
+		"caniuse-lite": "^1.0.30001759"
 	}
 }
