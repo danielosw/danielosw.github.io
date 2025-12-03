@@ -7,6 +7,7 @@ export default defineConfig({
 	
 	test: {
 		expect: { requireAssertions: true },
+		pool: "threads",
 		projects: [
 			{
 				extends: "./vite.config.ts",
