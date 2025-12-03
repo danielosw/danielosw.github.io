@@ -1,9 +1,9 @@
 {
   "nodeModulesDir": "manual",
   "tasks": {
-    "build": "npx vite build",
-    "dev": "npx vite dev",
-    "lint": "npx eslint .",
-    "test": "npx vitest run"
+    "build": "deno run -A npm:vite build",
+    "dev": "deno run -A npm:vite dev",
+    "lint": "deno run -A npm:eslint .",
+    "test": "deno run -A npm:vitest run --pool=threads"
   }
 }
