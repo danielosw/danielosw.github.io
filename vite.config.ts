@@ -7,6 +7,7 @@ export default defineConfig({
 	
 	test: {
 		expect: { requireAssertions: true },
+		// Use threads pool to work around Deno V8 isolate crash with default worker forks
 		pool: "threads",
 		projects: [
 			{
