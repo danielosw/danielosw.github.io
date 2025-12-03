@@ -27,13 +27,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
-      - name: Setup Deno
-        # You may pin to the exact commit or the version.
-        # uses: denoland/setup-deno@e95548e56dfa95d4e1a28d6f422fafe75c4c26fb
-        uses: denoland/setup-deno@v2.0.3
-        with:
-          cache: true
-                
+
       - name: Set up bun.js
         uses: oven-sh/setup-bun@v2 # Setup bun
         with:
