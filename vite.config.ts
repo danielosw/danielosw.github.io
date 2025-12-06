@@ -2,8 +2,9 @@ import { defineConfig } from "vitest/config";
 import { sveltekit } from "@sveltejs/kit/vite";
 import { playwright } from '@vitest/browser-playwright'
 import deno from "@deno/vite-plugin";
+import legacy from '@vitejs/plugin-legacy'
 export default defineConfig({
-	plugins: [sveltekit(), deno()],
+	plugins: [deno(), legacy(), sveltekit()],
 
 	test: {
 		expect: { requireAssertions: true },
