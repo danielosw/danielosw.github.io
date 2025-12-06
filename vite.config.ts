@@ -10,7 +10,9 @@ export default defineConfig({
 		projects: [
 			{
 				extends: "./vite.config.ts",
+
 				test: {
+					fileParallelism: false,
 					name: "client",
 					browser: {
 						enabled: true,
@@ -25,6 +27,7 @@ export default defineConfig({
 			{
 				extends: "./vite.config.ts",
 				test: {
+					fileParallelism: false,
 					name: "server",
 					environment: "node",
 					include: ["src/**/*.{test,spec}.{js,ts}"],

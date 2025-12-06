@@ -10,7 +10,7 @@ describe('PostTemplate component', () => {
 				title: 'Test Post',
 			},
 		});
-		
+
 		const titleLink = page.getByRole('link', { name: 'Test Post' });
 		await expect.element(titleLink).toBeInTheDocument();
 	});
@@ -21,7 +21,7 @@ describe('PostTemplate component', () => {
 				title: 'my post',
 			},
 		});
-		
+
 		const link = page.getByRole('link', { name: 'my post' });
 		await expect.element(link).toHaveAttribute('href', '/details/mypost');
 	});
@@ -32,7 +32,7 @@ describe('PostTemplate component', () => {
 				title: 'ai thoughts',
 			},
 		});
-		
+
 		const link = page.getByRole('link', { name: 'ai thoughts' });
 		await expect.element(link).toHaveAttribute('href', '/details/aithoughts');
 	});
@@ -41,7 +41,7 @@ describe('PostTemplate component', () => {
 		render(PostTemplate, {
 			props: {},
 		});
-		
+
 		const placeholderLink = page.getByRole('link', { name: 'placeholder' });
 		await expect.element(placeholderLink).toBeInTheDocument();
 	});
@@ -52,8 +52,8 @@ describe('PostTemplate component', () => {
 				title: 'Test',
 			},
 		});
-		
+
 		const blogbox = container.querySelector('.blogbox');
-		expect(blogbox).toBeTruthy();
+		await expect(blogbox).toBeTruthy();
 	});
 });

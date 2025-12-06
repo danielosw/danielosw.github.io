@@ -31,7 +31,7 @@ jobs:
       - name: Set up bun.js
         uses: oven-sh/setup-bun@v2 # Setup bun
         with:
-            bun-version: latest
+          bun-version: latest
 
       - name: Cache Bun dependencies
         uses: actions/cache@v4
@@ -66,4 +66,3 @@ jobs:
       - name: Install Playwright system dependencies
         if: steps.playwright-cache.outputs.cache-hit == 'true'
         run: bun x playwright install-deps firefox
-        

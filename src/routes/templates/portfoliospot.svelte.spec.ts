@@ -12,7 +12,7 @@ describe('PortfolioSpot component', () => {
 				imgsrc: '/image.png',
 			},
 		});
-		
+
 		const title = page.getByRole('heading', { name: 'My Project' });
 		await expect.element(title).toBeInTheDocument();
 	});
@@ -26,7 +26,7 @@ describe('PortfolioSpot component', () => {
 				alt: 'Test image',
 			},
 		});
-		
+
 		const image = page.getByRole('img', { name: 'Test image' });
 		await expect.element(image).toBeInTheDocument();
 		await expect.element(image).toHaveAttribute('src', '/test.png');
@@ -40,7 +40,7 @@ describe('PortfolioSpot component', () => {
 				imgsrc: '/test.png',
 			},
 		});
-		
+
 		const link = page.getByRole('link');
 		await expect.element(link).toHaveAttribute('href', '/portfolio/Test');
 	});
@@ -49,7 +49,7 @@ describe('PortfolioSpot component', () => {
 		render(PortfolioSpot, {
 			props: {},
 		});
-		
+
 		const title = page.getByRole('heading', { name: 'placeholder' });
 		await expect.element(title).toBeInTheDocument();
 	});
@@ -62,8 +62,8 @@ describe('PortfolioSpot component', () => {
 				imgsrc: '/test.png',
 			},
 		});
-		
+
 		const wrapper = container.querySelector('.indiportwrap');
-		expect(wrapper).toBeTruthy();
+		await expect(wrapper).toBeTruthy();
 	});
 });
