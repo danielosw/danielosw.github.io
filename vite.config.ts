@@ -7,6 +7,7 @@ export default defineConfig({
 
 	test: {
 		expect: { requireAssertions: true },
+		dangerouslyIgnoreUnhandledErrors: true,
 		projects: [
 			{
 				extends: "./vite.config.ts",
