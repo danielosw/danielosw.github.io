@@ -5,40 +5,37 @@ on:
     branches:
       - main
 
-
 permissions:
   contents: read
 
 jobs:
   test:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
-      
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v2
-        with:
-          bun-version: latest
-      
-      - name: Cache Bun dependencies
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+
+      - name: Cache deno dependencies
         uses: actions/cache@v4
         with:
           path: |
-            ~/.bun/install/cache
+            ~/.cache/deno
             node_modules
-          key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lock') }}
+          key: ${{ runner.os }}-deno-${{ hashFiles('**/deno.lock') }}
           restore-keys: |
-            ${{ runner.os }}-bun-
-      
+            ${{ runner.os }}-deno-
+
       - name: Install dependencies
-        run: bun install
-      
+        run: deno install
+
       - name: Get Playwright version
         id: playwright-version
-        run: echo "version=$(bunx playwright --version | grep -oP 'Version \K[0-9.]+')" >> $GITHUB_OUTPUT
-      
+        run: echo "version=$(deno run -A npm:playwright --version | grep -oP 'Version \K[0-9.]+')" >> $GITHUB_OUTPUT
+
       - name: Cache Playwright browsers
         uses: actions/cache@v4
         id: playwright-cache
@@ -47,18 +44,18 @@ jobs:
           key: ${{ runner.os }}-playwright-${{ steps.playwright-version.outputs.version }}
           restore-keys: |
             ${{ runner.os }}-playwright-
-      
+
       - name: Install Playwright browsers
         if: steps.playwright-cache.outputs.cache-hit != 'true'
-        run: bunx playwright install --with-deps firefox
-      
+        run: deno run -A npm:playwright install --with-deps firefox
+
       - name: Install Playwright system dependencies
         if: steps.playwright-cache.outputs.cache-hit == 'true'
-        run: bunx playwright install-deps firefox
-      
+        run: deno run -A npm:playwright install-deps firefox
+
       - name: Run tests
-        run: bun run test
-      
+        run: npm run test
+
       - name: Upload test results
         if: failure()
         uses: actions/upload-artifact@v5

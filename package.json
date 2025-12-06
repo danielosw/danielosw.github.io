@@ -2,6 +2,7 @@
 	"name": "danielosw.github.io",
 	"version": "0.0.1",
 	"devDependencies": {
+		"@deno/vite-plugin": "^1.0.5",
 		"@fullhuman/postcss-purgecss": "^7.0.2",
 		"@sveltejs/adapter-static": "^3.0.10",
 		"@sveltejs/kit": "^2.49.1",

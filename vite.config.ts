@@ -1,15 +1,16 @@
 import { defineConfig } from "vitest/config";
 import { sveltekit } from "@sveltejs/kit/vite";
 import { playwright } from '@vitest/browser-playwright'
-
+import deno from "@deno/vite-plugin";
 export default defineConfig({
-	plugins: [sveltekit()],
-	
+	plugins: [sveltekit(), deno()],
+
 	test: {
 		expect: { requireAssertions: true },
 		projects: [
 			{
 				extends: "./vite.config.ts",
+
 				test: {
 					name: "client",
 					browser: {
