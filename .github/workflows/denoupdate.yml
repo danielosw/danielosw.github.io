@@ -1,0 +1,57 @@
+name: Update Deno Dependencies
+
+on:
+  schedule:
+    - cron: '0 4 * * *' # Runs every day at 4:00 UTC
+  workflow_dispatch:
+
+jobs:
+  update-deno-dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+
+      - name: Cache deno dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/deno
+            node_modules
+          key: ${{ runner.os }}-deno-${{ hashFiles('**/deno.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-deno-
+
+      - name: Install JavaScript dependencies
+        run: deno install
+
+      - name: Run deno outdated and update dependencies
+        run: |
+          deno outdated --update --latest
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git fetch origin
+          if ! git diff --quiet; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create Pull Request
+        if: steps.git-check.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: 'chore: update Deno dependencies'
+          branch: deno-deps/update
+          delete-branch: true
+          title: 'chore: update Deno dependencies'
+          body: |
+            Automated dependency update using `deno outdated --update --latest`.
+          labels: dependencies, automated pr
