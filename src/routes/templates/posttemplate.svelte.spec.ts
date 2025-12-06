@@ -54,6 +54,6 @@ describe('PostTemplate component', () => {
 		});
 
 		const blogbox = container.querySelector('.blogbox');
-		await expect(blogbox).toBeTruthy();
+		expect(blogbox).toBeTruthy();
 	});
 });
