@@ -3,6 +3,15 @@ on:
   push:
     branches:
       - main # Execute on every push
+    paths:
+      - 'src/**'
+      - '.github/workflows/pages-build-deployment.yml'
+      - 'static/**'
+      - 'deno.lock'
+      - '*.js'
+      - '*.cjs'
+      - '*.ts'
+      - '*.json'
   workflow_dispatch: # Execute on manual trigger
 permissions:
   contents: read
