@@ -1,2 +1,2 @@
-# Personal site.
-Hi, 
+[![Run Tests](https://github.com/danielosw/danielosw.github.io/actions/workflows/test.yml/badge.svg)](https://github.com/danielosw/danielosw.github.io/actions/workflows/test.yml)
+[![Deploy static content to Pages](https://github.com/danielosw/danielosw.github.io/actions/workflows/pages-build-deployment.yml/badge.svg)](https://github.com/danielosw/danielosw.github.io/actions/workflows/pages-build-deployment.yml)
