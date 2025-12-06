@@ -13,7 +13,7 @@
     "npm:@vitest/browser-playwright@^4.0.15": "4.0.15_playwright@1.57.0_vitest@4.0.15__@vitest+browser-playwright@4.0.15__playwright@1.57.0__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_terser@5.44.1",
     "npm:@vitest/browser@^4.0.15": "4.0.15_vitest@4.0.15__@vitest+browser-playwright@4.0.15___playwright@1.57.0___vitest@4.0.15___vite@7.2.6____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__playwright@1.57.0__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15___@vitest+browser-playwright@4.0.15___playwright@1.57.0___vite@7.2.6____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_terser@5.44.1_playwright@1.57.0",
     "npm:autoprefixer@^10.4.22": "10.4.22_postcss@8.5.6",
-    "npm:baseline-browser-mapping@^2.9.3": "2.9.3",
+    "npm:baseline-browser-mapping@^2.9.4": "2.9.4",
     "npm:caniuse-lite@^1.0.30001759": "1.0.30001759",
     "npm:cssnano-preset-advanced@^7.0.10": "7.0.10_postcss@8.5.6",
     "npm:cssnano@^7.1.2": "7.1.2_postcss@8.5.6",
@@ -2051,8 +2051,8 @@
     "balanced-match@1.0.2": {
       "integrity": "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw=="
     },
-    "baseline-browser-mapping@2.9.3": {
-      "integrity": "sha512-8QdH6czo+G7uBsNo0GiUfouPN1lRzKdJTGnKXwe12gkFbnnOUaUKGN55dMkfy+mnxmvjwl9zcI4VncczcVXDhA==",
+    "baseline-browser-mapping@2.9.4": {
+      "integrity": "sha512-ZCQ9GEWl73BVm8bu5Fts8nt7MHdbt5vY9bP6WGnUh+r3l8M7CgfyTlwsgCbMC66BNxPr6Xoce3j66Ms5YUQTNA==",
       "bin": true
     },
     "boolbase@1.0.0": {
@@ -4099,7 +4099,7 @@
         "npm:@vitest/browser-playwright@^4.0.15",
         "npm:@vitest/browser@^4.0.15",
         "npm:autoprefixer@^10.4.22",
-        "npm:baseline-browser-mapping@^2.9.3",
+        "npm:baseline-browser-mapping@^2.9.4",
         "npm:caniuse-lite@^1.0.30001759",
         "npm:cssnano-preset-advanced@^7.0.10",
         "npm:cssnano@^7.1.2",
