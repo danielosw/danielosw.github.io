@@ -12,7 +12,6 @@ jobs:
       # If you want to clone the repository as part of your setup steps, for example to install dependencies, you'll need the `contents: read` permission. If you don't clone the repository in your setup steps, Copilot will do this for you automatically after the steps complete.
       contents: write
       pull-requests: write
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -33,7 +32,24 @@ jobs:
       - name: Install JavaScript dependencies
         run: deno install
 
-      - name: Run deno outdated and update dependencies
+      - name: Check for outdated dependencies
+        id: outdated
+        run: |
+          echo "Checking for outdated dependencies..."
+          set +e
+          OUTDATED_OUTPUT=$(deno outdated 2>&1)
+          EXIT_CODE=$?
+          set -e
+          if [ $EXIT_CODE -eq 0 ]; then
+            echo "Outdated dependencies check completed successfully."
+          else
+            echo "deno outdated exited with code $EXIT_CODE"
+          fi
+          echo "outdated_output<<EOF" >> $GITHUB_OUTPUT
+          echo "$OUTDATED_OUTPUT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Update dependencies
         run: |
           deno outdated --update --latest
 
@@ -59,4 +75,9 @@ jobs:
           title: 'chore: update Deno dependencies'
           body: |
             Automated dependency update using `deno outdated --update --latest`.
+
+            ## Outdated packages before update
+            ```
+            ${{ steps.outdated.outputs.outdated_output }}
+            ```
           labels: dependencies, automated pr
