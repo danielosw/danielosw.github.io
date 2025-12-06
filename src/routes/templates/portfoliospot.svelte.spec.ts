@@ -64,6 +64,6 @@ describe('PortfolioSpot component', () => {
 		});
 
 		const wrapper = container.querySelector('.indiportwrap');
-		await expect(wrapper).toBeTruthy();
+		expect(wrapper).toBeTruthy();
 	});
 });
