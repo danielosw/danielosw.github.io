@@ -2,9 +2,14 @@ import { defineConfig } from "vitest/config";
 import { sveltekit } from "@sveltejs/kit/vite";
 import { playwright } from '@vitest/browser-playwright'
 import deno from "@deno/vite-plugin";
-import legacy from '@vitejs/plugin-legacy'
+// Note: @vitejs/plugin-legacy is temporarily disabled due to incompatibility with SvelteKit + Vite 7
+// See: https://github.com/sveltejs/kit/issues/13299
+// The plugin causes vite.build() to return an array instead of a single RollupOutput,
+// which breaks SvelteKit's internal build process.
+// import legacy from '@vitejs/plugin-legacy'
+
 export default defineConfig({
-	plugins: [deno(), legacy(), sveltekit()],
+	plugins: [deno(), sveltekit()],
 
 	test: {
 		expect: { requireAssertions: true },
