@@ -7,6 +7,10 @@ export default defineConfig({
 
 	test: {
 		expect: { requireAssertions: true },
+		// Workaround for Deno-Vitest worker pool compatibility issues.
+		// The Deno runtime (as of 2.5.6) can panic with V8 isolate stack errors
+		// when Vitest uses worker forks. This can be removed once the Deno-Vitest
+		// compatibility is improved.
 		dangerouslyIgnoreUnhandledErrors: true,
 		projects: [
 			{
