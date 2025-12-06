@@ -20,24 +20,25 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v6 # Checkout repo
-      - uses: oven-sh/setup-bun@v2 # Setup bun
-        with:
-            bun-version: latest # You can also use a specific version
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+
+          
       
-      - name: Cache Bun dependencies
+      - name: Cache deno dependencies
         uses: actions/cache@v4
         with:
           path: |
-            ~/.bun/install/cache
+            ~/.cache/deno
             node_modules
-          key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lock') }}
+          key: ${{ runner.os }}-deno-${{ hashFiles('**/deno.lock') }}
           restore-keys: |
-            ${{ runner.os }}-bun-
+            ${{ runner.os }}-deno-
       
       - name: build
         run: |
-         bun install
-         bun run build
+         deno install
+         deno task build
          cp ./404.html ./build/404.html
       - name: deploy
         uses: actions/configure-pages@v5
