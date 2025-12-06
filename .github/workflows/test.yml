@@ -47,11 +47,11 @@ jobs:
 
       - name: Install Playwright browsers
         if: steps.playwright-cache.outputs.cache-hit != 'true'
-        run: deno run -A npm:playwright install --with-deps firefox
+        run: deno run -A npm:playwright install --with-deps
 
       - name: Install Playwright system dependencies
         if: steps.playwright-cache.outputs.cache-hit == 'true'
-        run: deno run -A npm:playwright install-deps firefox
+        run: deno run -A npm:playwright install-deps
 
       - name: Run tests
         run: npm run test

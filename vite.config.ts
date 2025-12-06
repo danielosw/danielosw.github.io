@@ -16,7 +16,7 @@ export default defineConfig({
 					browser: {
 						enabled: true,
 						provider: playwright(),
-						instances: [{ browser: "firefox" }],
+						instances: [{ browser: "firefox" }, { browser: "chromium" }, { browser: "webkit" }],
 					},
 					include: ["src/**/*.svelte.{test,spec}.{js,ts}"],
 					exclude: ["src/lib/server/**"],
