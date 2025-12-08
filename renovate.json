@@ -16,9 +16,9 @@
       "commitMessagePrefix": "chore:",
       "commitMessageTopic": "{{depName}}",
       "commitMessageExtra": "to {{newVersion}}",
-      "prTitle": "chore: update npm dependencies",
-      "groupName": "npm dependencies",
-      "groupSlug": "npm-dependencies",
+      "prTitle": "chore: update {{groupName}}",
+      "groupName": "dependencies",
+      "groupSlug": "dependencies",
       "semanticCommits": "enabled"
     },
     {
@@ -26,7 +26,7 @@
       "commitMessagePrefix": "chore:",
       "commitMessageTopic": "{{depName}}",
       "commitMessageExtra": "to {{newVersion}}",
-      "prTitle": "chore: update GitHub Actions",
+      "prTitle": "chore: update {{groupName}}",
       "groupName": "GitHub Actions",
       "groupSlug": "github-actions",
       "semanticCommits": "enabled"
