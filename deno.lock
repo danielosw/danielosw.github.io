@@ -4084,6 +4084,9 @@
       "integrity": "sha512-B58NGBEoc8Y9MWWCQGl/gq9xBCe4IiKM0a2x7GZdQKOW5Exr8S1W24J6OgM1njK8xCRGvAJIL/MxXHf6SkmQKQ=="
     }
   },
+  "remote": {
+    "https://docs.renovatebot.com/renovate-schema.json": "d1c9b5518be72cc5a92cef1ffc03e529177e38d8217fe3a3ae2d0688aab35167"
+  },
   "workspace": {
     "packageJson": {
       "dependencies": [

@@ -16,7 +16,6 @@
       "commitMessagePrefix": "chore:",
       "commitMessageTopic": "{{depName}}",
       "commitMessageExtra": "to {{newVersion}}",
-      "prTitle": "chore: update Deno dependencies",
       "groupName": "Deno dependencies",
       "groupSlug": "deno-dependencies",
       "semanticCommits": "enabled"
@@ -26,13 +25,12 @@
       "commitMessagePrefix": "chore:",
       "commitMessageTopic": "{{depName}}",
       "commitMessageExtra": "to {{newVersion}}",
-      "prTitle": "chore: update {{groupName}}",
       "groupName": "GitHub Actions",
       "groupSlug": "github-actions",
       "semanticCommits": "enabled"
     }
   ],
-  "lockfileMaintenance": {
+  "lockFileMaintenance": {
     "enabled": true,
     "schedule": ["before 5am on Monday"]
   },
