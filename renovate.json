@@ -1,0 +1,46 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "schedule": [
+    "every day"
+  ],
+  "labels": [
+    "dependencies",
+    "automated pr"
+  ],
+  "packageRules": [
+    {
+      "matchManagers": ["npm"],
+      "commitMessagePrefix": "chore:",
+      "commitMessageTopic": "{{depName}}",
+      "commitMessageExtra": "to {{newVersion}}",
+      "prTitle": "chore: update dependencies",
+      "groupName": "npm dependencies",
+      "groupSlug": "npm-dependencies",
+      "semanticCommits": "enabled"
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "commitMessagePrefix": "chore:",
+      "commitMessageTopic": "{{depName}}",
+      "commitMessageExtra": "to {{newVersion}}",
+      "prTitle": "chore: update GitHub Actions",
+      "groupName": "GitHub Actions",
+      "groupSlug": "github-actions",
+      "semanticCommits": "enabled"
+    }
+  ],
+  "npm": {
+    "lockfileMaintenance": {
+      "enabled": true,
+      "schedule": ["before 5am on Monday"]
+    }
+  },
+  "prConcurrentLimit": 10,
+  "prCreation": "immediate",
+  "rangeStrategy": "bump",
+  "automerge": false,
+  "platformAutomerge": false
+}
