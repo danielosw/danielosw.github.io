@@ -1,0 +1,44 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "schedule": [
+    "every day"
+  ],
+  "labels": [
+    "dependencies",
+    "automated pr"
+  ],
+  "packageRules": [
+    {
+      "matchManagers": ["npm"],
+      "commitMessagePrefix": "chore:",
+      "commitMessageTopic": "{{depName}}",
+      "commitMessageExtra": "to {{newVersion}}",
+      "prTitle": "chore: update Deno dependencies",
+      "groupName": "Deno dependencies",
+      "groupSlug": "deno-dependencies",
+      "semanticCommits": "enabled"
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "commitMessagePrefix": "chore:",
+      "commitMessageTopic": "{{depName}}",
+      "commitMessageExtra": "to {{newVersion}}",
+      "prTitle": "chore: update {{groupName}}",
+      "groupName": "GitHub Actions",
+      "groupSlug": "github-actions",
+      "semanticCommits": "enabled"
+    }
+  ],
+  "lockfileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 5am on Monday"]
+  },
+  "prConcurrentLimit": 10,
+  "prCreation": "immediate",
+  "rangeStrategy": "bump",
+  "automerge": false,
+  "platformAutomerge": false
+}
