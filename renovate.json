@@ -12,13 +12,13 @@
   ],
   "packageRules": [
     {
-      "matchManagers": ["npm", "deno"],
+      "matchManagers": ["npm"],
       "commitMessagePrefix": "chore:",
       "commitMessageTopic": "{{depName}}",
       "commitMessageExtra": "to {{newVersion}}",
-      "prTitle": "chore: update {{groupName}}",
-      "groupName": "dependencies",
-      "groupSlug": "dependencies",
+      "prTitle": "chore: update Deno dependencies",
+      "groupName": "Deno dependencies",
+      "groupSlug": "deno-dependencies",
       "semanticCommits": "enabled"
     },
     {
@@ -32,11 +32,9 @@
       "semanticCommits": "enabled"
     }
   ],
-  "npm": {
-    "lockfileMaintenance": {
-      "enabled": true,
-      "schedule": ["before 5am on Monday"]
-    }
+  "lockfileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 5am on Monday"]
   },
   "prConcurrentLimit": 10,
   "prCreation": "immediate",
