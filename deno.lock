@@ -1,17 +1,17 @@
 {
   "version": "5",
   "specifiers": {
-    "npm:@deno/vite-plugin@^1.0.5": "1.0.5_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_terser@5.44.1",
+    "npm:@deno/vite-plugin@^1.0.5": "1.0.5_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_terser@5.44.1",
     "npm:@eslint/js@^9.39.1": "9.39.1",
     "npm:@fullhuman/postcss-purgecss@^7.0.2": "7.0.2_postcss@8.5.6",
-    "npm:@sveltejs/adapter-static@^3.0.10": "3.0.10_@sveltejs+kit@2.49.1__@sveltejs+vite-plugin-svelte@6.2.1___svelte@5.45.6____acorn@8.15.0___vite@7.2.6____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__svelte@5.45.6___acorn@8.15.0__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__acorn@8.15.0__terser@5.44.1_@sveltejs+vite-plugin-svelte@6.2.1__svelte@5.45.6___acorn@8.15.0__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_svelte@5.45.6__acorn@8.15.0_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_terser@5.44.1",
-    "npm:@sveltejs/kit@^2.49.1": "2.49.1_@sveltejs+vite-plugin-svelte@6.2.1__svelte@5.45.6___acorn@8.15.0__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_svelte@5.45.6__acorn@8.15.0_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_acorn@8.15.0_terser@5.44.1",
-    "npm:@sveltejs/vite-plugin-svelte@^6.2.1": "6.2.1_svelte@5.45.6__acorn@8.15.0_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_terser@5.44.1",
+    "npm:@sveltejs/adapter-static@^3.0.10": "3.0.10_@sveltejs+kit@2.49.1__@sveltejs+vite-plugin-svelte@6.2.1___svelte@5.45.6____acorn@8.15.0___vite@7.2.7____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__svelte@5.45.6___acorn@8.15.0__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__acorn@8.15.0__terser@5.44.1_@sveltejs+vite-plugin-svelte@6.2.1__svelte@5.45.6___acorn@8.15.0__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_svelte@5.45.6__acorn@8.15.0_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_terser@5.44.1",
+    "npm:@sveltejs/kit@^2.49.1": "2.49.1_@sveltejs+vite-plugin-svelte@6.2.1__svelte@5.45.6___acorn@8.15.0__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_svelte@5.45.6__acorn@8.15.0_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_acorn@8.15.0_terser@5.44.1",
+    "npm:@sveltejs/vite-plugin-svelte@^6.2.1": "6.2.1_svelte@5.45.6__acorn@8.15.0_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_terser@5.44.1",
     "npm:@tailwindcss/postcss@^4.1.17": "4.1.17",
     "npm:@types/eslint@^9.6.1": "9.6.1",
-    "npm:@vitejs/plugin-legacy@^7.2.1": "7.2.1_terser@5.44.1_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_@babel+core@7.28.5_browserslist@4.28.1",
-    "npm:@vitest/browser-playwright@^4.0.15": "4.0.15_playwright@1.57.0_vitest@4.0.15__@vitest+browser-playwright@4.0.15__playwright@1.57.0__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_terser@5.44.1",
-    "npm:@vitest/browser@^4.0.15": "4.0.15_vitest@4.0.15__@vitest+browser-playwright@4.0.15___playwright@1.57.0___vitest@4.0.15___vite@7.2.6____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__playwright@1.57.0__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15___@vitest+browser-playwright@4.0.15___playwright@1.57.0___vite@7.2.6____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_terser@5.44.1_playwright@1.57.0",
+    "npm:@vitejs/plugin-legacy@^7.2.1": "7.2.1_terser@5.44.1_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_@babel+core@7.28.5_browserslist@4.28.1",
+    "npm:@vitest/browser-playwright@^4.0.15": "4.0.15_playwright@1.57.0_vitest@4.0.15__@vitest+browser-playwright@4.0.15__playwright@1.57.0__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_terser@5.44.1",
+    "npm:@vitest/browser@^4.0.15": "4.0.15_vitest@4.0.15__@vitest+browser-playwright@4.0.15___playwright@1.57.0___vitest@4.0.15___vite@7.2.7____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__playwright@1.57.0__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15___@vitest+browser-playwright@4.0.15___playwright@1.57.0___vite@7.2.7____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_terser@5.44.1_playwright@1.57.0",
     "npm:autoprefixer@^10.4.22": "10.4.22_postcss@8.5.6",
     "npm:baseline-browser-mapping@^2.9.4": "2.9.4",
     "npm:caniuse-lite@^1.0.30001759": "1.0.30001759",
@@ -33,9 +33,9 @@
     "npm:terser@^5.44.1": "5.44.1",
     "npm:typescript-eslint@^8.48.1": "8.48.1_eslint@9.39.1_typescript@5.9.3_@typescript-eslint+parser@8.48.1__eslint@9.39.1__typescript@5.9.3",
     "npm:typescript@^5.9.3": "5.9.3",
-    "npm:vite@^7.2.6": "7.2.6_terser@5.44.1_picomatch@4.0.3",
-    "npm:vitest-browser-svelte@^2.0.1": "2.0.1_svelte@5.45.6__acorn@8.15.0_vitest@4.0.15__@vitest+browser-playwright@4.0.15___playwright@1.57.0___vitest@4.0.15___vite@7.2.6____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__playwright@1.57.0__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15___@vitest+browser-playwright@4.0.15___playwright@1.57.0___vite@7.2.6____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_playwright@1.57.0_terser@5.44.1",
-    "npm:vitest@^4.0.15": "4.0.15_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_playwright@1.57.0_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_terser@5.44.1"
+    "npm:vite@^7.2.7": "7.2.7_terser@5.44.1_picomatch@4.0.3",
+    "npm:vitest-browser-svelte@^2.0.1": "2.0.1_svelte@5.45.6__acorn@8.15.0_vitest@4.0.15__@vitest+browser-playwright@4.0.15___playwright@1.57.0___vitest@4.0.15___vite@7.2.7____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__playwright@1.57.0__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15___@vitest+browser-playwright@4.0.15___playwright@1.57.0___vite@7.2.7____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_playwright@1.57.0_terser@5.44.1",
+    "npm:vitest@^4.0.15": "4.0.15_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_playwright@1.57.0_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_terser@5.44.1"
   },
   "npm": {
     "@alloc/quick-lru@5.2.0": {
@@ -1190,7 +1190,7 @@
         "postcss"
       ]
     },
-    "@deno/vite-plugin@1.0.5_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_terser@5.44.1": {
+    "@deno/vite-plugin@1.0.5_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_terser@5.44.1": {
       "integrity": "sha512-tLja5n4dyMhcze1NzvSs2iiriBymfBlDCZIrjMTxb9O2ru0gvmV6mn5oBD2teNw5Sd92cj3YJzKwsAs8tMJXlg==",
       "dependencies": [
         "vite"
@@ -1582,13 +1582,13 @@
         "acorn"
       ]
     },
-    "@sveltejs/adapter-static@3.0.10_@sveltejs+kit@2.49.1__@sveltejs+vite-plugin-svelte@6.2.1___svelte@5.45.6____acorn@8.15.0___vite@7.2.6____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__svelte@5.45.6___acorn@8.15.0__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__acorn@8.15.0__terser@5.44.1_@sveltejs+vite-plugin-svelte@6.2.1__svelte@5.45.6___acorn@8.15.0__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_svelte@5.45.6__acorn@8.15.0_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_terser@5.44.1": {
+    "@sveltejs/adapter-static@3.0.10_@sveltejs+kit@2.49.1__@sveltejs+vite-plugin-svelte@6.2.1___svelte@5.45.6____acorn@8.15.0___vite@7.2.7____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__svelte@5.45.6___acorn@8.15.0__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__acorn@8.15.0__terser@5.44.1_@sveltejs+vite-plugin-svelte@6.2.1__svelte@5.45.6___acorn@8.15.0__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_svelte@5.45.6__acorn@8.15.0_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_terser@5.44.1": {
       "integrity": "sha512-7D9lYFWJmB7zxZyTE/qxjksvMqzMuYrrsyh1f4AlZqeZeACPRySjbC3aFiY55wb1tWUaKOQG9PVbm74JcN2Iew==",
       "dependencies": [
         "@sveltejs/kit"
       ]
     },
-    "@sveltejs/kit@2.49.1_@sveltejs+vite-plugin-svelte@6.2.1__svelte@5.45.6___acorn@8.15.0__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_svelte@5.45.6__acorn@8.15.0_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_acorn@8.15.0_terser@5.44.1": {
+    "@sveltejs/kit@2.49.1_@sveltejs+vite-plugin-svelte@6.2.1__svelte@5.45.6___acorn@8.15.0__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_svelte@5.45.6__acorn@8.15.0_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_acorn@8.15.0_terser@5.44.1": {
       "integrity": "sha512-vByReCTTdlNM80vva8alAQC80HcOiHLkd8XAxIiKghKSHcqeNfyhp3VsYAV8VSiPKu4Jc8wWCfsZNAIvd1uCqA==",
       "dependencies": [
         "@standard-schema/spec",
@@ -1610,7 +1610,7 @@
       ],
       "bin": true
     },
-    "@sveltejs/vite-plugin-svelte-inspector@5.0.1_@sveltejs+vite-plugin-svelte@6.2.1__svelte@5.45.6___acorn@8.15.0__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_svelte@5.45.6__acorn@8.15.0_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_terser@5.44.1": {
+    "@sveltejs/vite-plugin-svelte-inspector@5.0.1_@sveltejs+vite-plugin-svelte@6.2.1__svelte@5.45.6___acorn@8.15.0__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_svelte@5.45.6__acorn@8.15.0_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_terser@5.44.1": {
       "integrity": "sha512-ubWshlMk4bc8mkwWbg6vNvCeT7lGQojE3ijDh3QTR6Zr/R+GXxsGbyH4PExEPpiFmqPhYiVSVmHBjUcVc1JIrA==",
       "dependencies": [
         "@sveltejs/vite-plugin-svelte",
@@ -1619,7 +1619,7 @@
         "vite"
       ]
     },
-    "@sveltejs/vite-plugin-svelte@6.2.1_svelte@5.45.6__acorn@8.15.0_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_terser@5.44.1": {
+    "@sveltejs/vite-plugin-svelte@6.2.1_svelte@5.45.6__acorn@8.15.0_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_terser@5.44.1": {
       "integrity": "sha512-YZs/OSKOQAQCnJvM/P+F1URotNnYNeU3P2s4oIpzm1uFaqUEqRxUB0g5ejMjEb5Gjb9/PiBI5Ktrq4rUUF8UVQ==",
       "dependencies": [
         "@sveltejs/vite-plugin-svelte-inspector",
@@ -1854,7 +1854,7 @@
         "eslint-visitor-keys@4.2.1"
       ]
     },
-    "@vitejs/plugin-legacy@7.2.1_terser@5.44.1_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_@babel+core@7.28.5_browserslist@4.28.1": {
+    "@vitejs/plugin-legacy@7.2.1_terser@5.44.1_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_@babel+core@7.28.5_browserslist@4.28.1": {
       "integrity": "sha512-CaXb/y0mlfu7jQRELEJJc2/5w2bX2m1JraARgFnvSB2yfvnCNJVWWlqAo6WjnKoepOwKx8gs0ugJThPLKCOXIg==",
       "dependencies": [
         "@babel/core",
@@ -1873,17 +1873,17 @@
         "vite"
       ]
     },
-    "@vitest/browser-playwright@4.0.15_playwright@1.57.0_vitest@4.0.15__@vitest+browser-playwright@4.0.15__playwright@1.57.0__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_terser@5.44.1": {
+    "@vitest/browser-playwright@4.0.15_playwright@1.57.0_vitest@4.0.15__@vitest+browser-playwright@4.0.15__playwright@1.57.0__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_terser@5.44.1": {
       "integrity": "sha512-94yVpDbb+ykiT7mK6ToonGnq2GIHEQGBTZTAzGxBGQXcVNCh54YKC2/WkfaDzxy0m6Kgw05kq3FYHKHu+wRdIA==",
       "dependencies": [
-        "@vitest/browser@4.0.15_vitest@4.0.15__@vitest+browser-playwright@4.0.15___playwright@1.57.0___vitest@4.0.15___vite@7.2.6____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__playwright@1.57.0__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15___@vitest+browser-playwright@4.0.15___playwright@1.57.0___vite@7.2.6____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_terser@5.44.1",
+        "@vitest/browser@4.0.15_vitest@4.0.15__@vitest+browser-playwright@4.0.15___playwright@1.57.0___vitest@4.0.15___vite@7.2.7____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__playwright@1.57.0__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15___@vitest+browser-playwright@4.0.15___playwright@1.57.0___vite@7.2.7____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_terser@5.44.1",
         "@vitest/mocker",
         "playwright",
         "tinyrainbow",
-        "vitest@4.0.15_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_playwright@1.57.0_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_terser@5.44.1"
+        "vitest@4.0.15_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_playwright@1.57.0_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_terser@5.44.1"
       ]
     },
-    "@vitest/browser@4.0.15_vitest@4.0.15__@vitest+browser-playwright@4.0.15___playwright@1.57.0___vitest@4.0.15___vite@7.2.6____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__playwright@1.57.0__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15___@vitest+browser-playwright@4.0.15___playwright@1.57.0___vite@7.2.6____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_terser@5.44.1": {
+    "@vitest/browser@4.0.15_vitest@4.0.15__@vitest+browser-playwright@4.0.15___playwright@1.57.0___vitest@4.0.15___vite@7.2.7____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__playwright@1.57.0__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15___@vitest+browser-playwright@4.0.15___playwright@1.57.0___vite@7.2.7____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_terser@5.44.1": {
       "integrity": "sha512-zedtczX688KehaIaAv7m25CeDLb0gBtAOa2Oi1G1cqvSO5aLSVfH6lpZMJLW8BKYuWMxLQc9/5GYoM+jgvGIrw==",
       "dependencies": [
         "@vitest/mocker",
@@ -1893,11 +1893,11 @@
         "pngjs",
         "sirv",
         "tinyrainbow",
-        "vitest@4.0.15_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_playwright@1.57.0_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_terser@5.44.1",
+        "vitest@4.0.15_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_playwright@1.57.0_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_terser@5.44.1",
         "ws"
       ]
     },
-    "@vitest/browser@4.0.15_vitest@4.0.15__@vitest+browser-playwright@4.0.15___playwright@1.57.0___vitest@4.0.15___vite@7.2.6____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__playwright@1.57.0__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15___@vitest+browser-playwright@4.0.15___playwright@1.57.0___vite@7.2.6____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_terser@5.44.1_playwright@1.57.0": {
+    "@vitest/browser@4.0.15_vitest@4.0.15__@vitest+browser-playwright@4.0.15___playwright@1.57.0___vitest@4.0.15___vite@7.2.7____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__playwright@1.57.0__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15___@vitest+browser-playwright@4.0.15___playwright@1.57.0___vite@7.2.7____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_terser@5.44.1_playwright@1.57.0": {
       "integrity": "sha512-zedtczX688KehaIaAv7m25CeDLb0gBtAOa2Oi1G1cqvSO5aLSVfH6lpZMJLW8BKYuWMxLQc9/5GYoM+jgvGIrw==",
       "dependencies": [
         "@vitest/mocker",
@@ -1907,7 +1907,7 @@
         "pngjs",
         "sirv",
         "tinyrainbow",
-        "vitest@4.0.15_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_terser@5.44.1_playwright@1.57.0",
+        "vitest@4.0.15_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_terser@5.44.1_playwright@1.57.0",
         "ws"
       ]
     },
@@ -1922,7 +1922,7 @@
         "tinyrainbow"
       ]
     },
-    "@vitest/mocker@4.0.15_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_terser@5.44.1": {
+    "@vitest/mocker@4.0.15_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_terser@5.44.1": {
       "integrity": "sha512-CZ28GLfOEIFkvCFngN8Sfx5h+Se0zN+h4B7yOsPVCcgtiO7t5jt9xQh2E1UkFep+eb9fjyMfuC5gBypwb07fvQ==",
       "dependencies": [
         "@vitest/spy",
@@ -3939,8 +3939,8 @@
     "util-deprecate@1.0.2": {
       "integrity": "sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw=="
     },
-    "vite@7.2.6_terser@5.44.1_picomatch@4.0.3": {
-      "integrity": "sha512-tI2l/nFHC5rLh7+5+o7QjKjSR04ivXDF4jcgV0f/bTQ+OJiITy5S6gaynVsEM+7RqzufMnVbIon6Sr5x1SDYaQ==",
+    "vite@7.2.7_terser@5.44.1_picomatch@4.0.3": {
+      "integrity": "sha512-ITcnkFeR3+fI8P1wMgItjGrR10170d8auB4EpMLPqmx6uxElH3a/hHGQabSHKdqd4FXWO1nFIp9rRn7JQ34ACQ==",
       "dependencies": [
         "esbuild",
         "fdir",
@@ -3958,7 +3958,7 @@
       ],
       "bin": true
     },
-    "vitefu@1.1.1_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_terser@5.44.1": {
+    "vitefu@1.1.1_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_terser@5.44.1": {
       "integrity": "sha512-B/Fegf3i8zh0yFbpzZ21amWzHmuNlLlmJT6n7bu5e+pCHUKQIfXSYokrqOBGEMMe9UG2sostKQF9mml/vYaWJQ==",
       "dependencies": [
         "vite"
@@ -3967,14 +3967,14 @@
         "vite"
       ]
     },
-    "vitest-browser-svelte@2.0.1_svelte@5.45.6__acorn@8.15.0_vitest@4.0.15__@vitest+browser-playwright@4.0.15___playwright@1.57.0___vitest@4.0.15___vite@7.2.6____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__playwright@1.57.0__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15___@vitest+browser-playwright@4.0.15___playwright@1.57.0___vite@7.2.6____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_playwright@1.57.0_terser@5.44.1": {
+    "vitest-browser-svelte@2.0.1_svelte@5.45.6__acorn@8.15.0_vitest@4.0.15__@vitest+browser-playwright@4.0.15___playwright@1.57.0___vitest@4.0.15___vite@7.2.7____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__playwright@1.57.0__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15___@vitest+browser-playwright@4.0.15___playwright@1.57.0___vite@7.2.7____terser@5.44.1____picomatch@4.0.3___terser@5.44.1__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_playwright@1.57.0_terser@5.44.1": {
       "integrity": "sha512-z7GFio7vxaOolY+xwPUMEKuwL4KcPzB8+bepA9F0Phqag/TJ4j7IAGSwm4Y/FBh7KznsP+7aEIllMay0qDpFXw==",
       "dependencies": [
         "svelte",
-        "vitest@4.0.15_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_playwright@1.57.0_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_terser@5.44.1"
+        "vitest@4.0.15_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_playwright@1.57.0_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_terser@5.44.1"
       ]
     },
-    "vitest@4.0.15_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_playwright@1.57.0_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_terser@5.44.1": {
+    "vitest@4.0.15_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_playwright@1.57.0_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_terser@5.44.1": {
       "integrity": "sha512-n1RxDp8UJm6N0IbJLQo+yzLZ2sQCDyl1o0LeugbPWf8+8Fttp29GghsQBjYJVmWq3gBFfe9Hs1spR44vovn2wA==",
       "dependencies": [
         "@vitest/browser-playwright",
@@ -4004,7 +4004,7 @@
       ],
       "bin": true
     },
-    "vitest@4.0.15_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15__vite@7.2.6___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_vite@7.2.6__terser@5.44.1__picomatch@4.0.3_terser@5.44.1_playwright@1.57.0": {
+    "vitest@4.0.15_@vitest+browser-playwright@4.0.15__playwright@1.57.0__vitest@4.0.15__vite@7.2.7___terser@5.44.1___picomatch@4.0.3__terser@5.44.1_vite@7.2.7__terser@5.44.1__picomatch@4.0.3_terser@5.44.1_playwright@1.57.0": {
       "integrity": "sha512-n1RxDp8UJm6N0IbJLQo+yzLZ2sQCDyl1o0LeugbPWf8+8Fttp29GghsQBjYJVmWq3gBFfe9Hs1spR44vovn2wA==",
       "dependencies": [
         "@vitest/browser-playwright",
@@ -4119,7 +4119,7 @@
         "npm:terser@^5.44.1",
         "npm:typescript-eslint@^8.48.1",
         "npm:typescript@^5.9.3",
-        "npm:vite@^7.2.6",
+        "npm:vite@^7.2.7",
         "npm:vitest-browser-svelte@^2.0.1",
         "npm:vitest@^4.0.15"
       ]
