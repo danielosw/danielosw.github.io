@@ -12,11 +12,11 @@
   ],
   "packageRules": [
     {
-      "matchManagers": ["npm"],
+      "matchManagers": ["npm", "deno"],
       "commitMessagePrefix": "chore:",
       "commitMessageTopic": "{{depName}}",
       "commitMessageExtra": "to {{newVersion}}",
-      "prTitle": "chore: update dependencies",
+      "prTitle": "chore: update npm dependencies",
       "groupName": "npm dependencies",
       "groupSlug": "npm-dependencies",
       "semanticCommits": "enabled"
