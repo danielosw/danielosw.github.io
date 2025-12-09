@@ -32,7 +32,7 @@
   ],
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": ["before 5am on Monday"]
+    "schedule": ["at any time"]
   },
   "prConcurrentLimit": 10,
   "prCreation": "immediate",
