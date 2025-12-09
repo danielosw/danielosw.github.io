@@ -13,6 +13,7 @@
   "packageRules": [
     {
       "matchManagers": ["npm"],
+	  "matchDatasources": ["deno"],
       "commitMessagePrefix": "chore:",
       "commitMessageTopic": "{{depName}}",
       "commitMessageExtra": "to {{newVersion}}",
