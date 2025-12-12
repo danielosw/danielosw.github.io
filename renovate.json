@@ -3,11 +3,10 @@
   "extends": [
     "config:recommended"
   ],
-  "enabledManagers": [
-    "deno",
-    "npm",
-    "github-actions"
-  ],
+
+
+
+
   "schedule": [
     "at any time"
   ],
