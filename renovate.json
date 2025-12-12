@@ -3,6 +3,11 @@
   "extends": [
     "config:recommended"
   ],
+  "enabledManagers": [
+    "deno",
+    "npm",
+    "github-actions"
+  ],
   "schedule": [
     "at any time"
   ],
@@ -12,8 +17,7 @@
   ],
   "packageRules": [
     {
-      "matchManagers": ["npm"],
-	  "matchDatasources": ["deno"],
+      "matchManagers": ["deno"],
       "commitMessagePrefix": "chore:",
       "commitMessageTopic": "{{depName}}",
       "commitMessageExtra": "to {{newVersion}}",
