@@ -3,21 +3,21 @@
 	"version": "0.0.1",
 	"devDependencies": {
 		"@deno/vite-plugin": "^1.0.5",
-		"@eslint/js": "^9.39.1",
+		"@eslint/js": "^9.39.2",
 		"@fullhuman/postcss-purgecss": "^7.0.2",
 		"@sveltejs/adapter-static": "^3.0.10",
 		"@sveltejs/kit": "^2.49.2",
 		"@sveltejs/vite-plugin-svelte": "^6.2.1",
-		"@tailwindcss/postcss": "^4.1.17",
+		"@tailwindcss/postcss": "^4.1.18",
 		"@types/eslint": "^9.6.1",
 		"@vitejs/plugin-legacy": "^7.2.1",
 		"@vitest/browser": "^4.0.15",
 		"@vitest/browser-playwright": "^4.0.15",
 		"autoprefixer": "^10.4.22",
-		"baseline-browser-mapping": "^2.9.5",
+		"baseline-browser-mapping": "^2.9.7",
 		"cssnano": "^7.1.2",
 		"cssnano-preset-advanced": "^7.0.10",
-		"eslint": "^9.39.1",
+		"eslint": "^9.39.2",
 		"eslint-plugin-svelte": "^3.13.1",
 		"globals": "^16.5.0",
 		"playwright": "^1.57.0",
@@ -26,10 +26,10 @@
 		"postcss-nesting": "^13.0.2",
 		"postcss-preset-env": "^10.5.0",
 		"postcss-simple-vars": "^7.0.1",
-		"svelte": "^5.45.8",
+		"svelte": "^5.46.0",
 		"svelte-check": "^4.3.4",
 		"svelte-preprocess": "^6.0.3",
-		"tailwindcss": "^4.1.17",
+		"tailwindcss": "^4.1.18",
 		"terser": "^5.44.1",
 		"typescript": "^5.9.3",
 		"typescript-eslint": "^8.49.0",
@@ -64,6 +64,6 @@
 	],
 	"type": "module",
 	"dependencies": {
-		"caniuse-lite": "^1.0.30001759"
+		"caniuse-lite": "^1.0.30001760"
 	}
 }
