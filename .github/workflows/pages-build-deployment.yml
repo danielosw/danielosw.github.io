@@ -46,8 +46,8 @@ jobs:
       
       - name: build
         run: |
-         nom install
-         mom run build
+         npm install
+         npm run build
          cp ./404.html ./build/404.html
       - name: deploy
         uses: actions/configure-pages@v5
