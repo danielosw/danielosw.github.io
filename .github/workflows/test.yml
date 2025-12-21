@@ -17,25 +17,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
-      - name: Setup Deno
-        uses: denoland/setup-deno@v2
-
-      - name: Cache deno dependencies
+      - name: Cache npm
         uses: actions/cache@v5
         with:
           path: |
-            ~/.cache/deno
             node_modules
-          key: ${{ runner.os }}-deno-${{ hashFiles('**/deno.lock') }}
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-deno-
+            ${{ runner.os }}-npm-
 
-      - name: Install dependencies
-        run: deno install
+      - name: Install JavaScript dependencies
+        run: npm install
 
       - name: Get Playwright version
         id: playwright-version
-        run: echo "version=$(deno run -A npm:playwright --version | grep -oP 'Version \K[0-9.]+')" >> $GITHUB_OUTPUT
+        run: echo "version=$(npm run -A playwright --version | grep -oP 'Version \K[0-9.]+')" >> $GITHUB_OUTPUT
 
       - name: Cache Playwright browsers
         uses: actions/cache@v5
@@ -50,11 +46,11 @@ jobs:
 
       - name: Install Playwright browsers
         if: steps.playwright-cache.outputs.cache-hit != 'true'
-        run: deno run -A npm:playwright install --with-deps
+        run: npm x playwright install --with-deps
 
       - name: Install Playwright system dependencies
         if: steps.playwright-cache.outputs.cache-hit == 'true'
-        run: deno run -A npm:playwright install-deps
+        run: npm x playwright install-deps
 
       - name: Run tests
         run: npm run test

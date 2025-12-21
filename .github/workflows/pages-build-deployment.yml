@@ -4,14 +4,14 @@ on:
     branches:
       - main # Execute on every push
     paths:
-      - 'src/**'
-      - '.github/workflows/pages-build-deployment.yml'
-      - 'static/**'
-      - 'deno.lock'
-      - '*.js'
-      - '*.cjs'
-      - '*.ts'
-      - '*.json'
+      - "src/**"
+      - ".github/workflows/pages-build-deployment.yml"
+      - "static/**"
+      - "package-lock.json"
+      - "*.js"
+      - "*.cjs"
+      - "*.ts"
+      - "*.json"
   workflow_dispatch: # Execute on manual trigger
 permissions:
   contents: read
@@ -20,7 +20,7 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
-  
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest # Linux base image
@@ -29,35 +29,28 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v6 # Checkout repo
-      - name: Setup Deno
-        uses: denoland/setup-deno@v2
 
-          
-      
-      - name: Cache deno dependencies
+      - name: Cache npm
         uses: actions/cache@v5
         with:
           path: |
-            ~/.cache/deno
             node_modules
-          key: ${{ runner.os }}-deno-${{ hashFiles('**/deno.lock') }}
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-deno-
-      
+            ${{ runner.os }}-npm-
+
       - name: build
         run: |
-         npm install
-         npm run build
-         cp ./404.html ./build/404.html
+          npm install
+          npm run build
+          cp ./404.html ./build/404.html
       - name: deploy
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
           # Upload build repo
-          path: './build/.'
+          path: "./build/."
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-      
-      

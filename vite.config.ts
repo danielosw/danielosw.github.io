@@ -1,13 +1,12 @@
 import { defineConfig } from "vitest/config";
 import { sveltekit } from "@sveltejs/kit/vite";
 import { playwright } from '@vitest/browser-playwright'
-import deno from "@deno/vite-plugin";
 // disable legacy due to incompatablity with svelte compiler
 //import legacy from '@vitejs/plugin-legacy'
 export default defineConfig({
-	plugins: [deno(), 
-			  //legacy(),
-			  sveltekit()],
+	plugins: [
+		//legacy(),
+		sveltekit()],
 
 	test: {
 		expect: { requireAssertions: true },
