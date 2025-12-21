@@ -46,8 +46,8 @@ jobs:
       
       - name: build
         run: |
-         deno install
-         deno task build
+         nom install
+         mom run build
          cp ./404.html ./build/404.html
       - name: deploy
         uses: actions/configure-pages@v5
