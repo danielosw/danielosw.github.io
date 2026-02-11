@@ -45,7 +45,9 @@ jobs:
             ${{ runner.os }}-playwright-
 
       - name: Install Playwright browsers
-        run: npm x playwright install --with-deps
+        run: |
+          npm x playwright install --with-deps
+          npm x playwright install-deps
       - name: Run tests
         run: npm run test
 
