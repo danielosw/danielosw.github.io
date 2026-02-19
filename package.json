@@ -38,7 +38,7 @@
 		"@vitest/browser": "^4.0.18",
 		"@vitest/browser-playwright": "^4.0.16",
 		"autoprefixer": "^10.4.24",
-		"baseline-browser-mapping": "^2.9.19",
+		"baseline-browser-mapping": "^2.10.0",
 		"caniuse-lite": "^1.0.30001770",
 		"cssnano": "^7.1.2",
 		"cssnano-preset-advanced": "^7.0.10",
