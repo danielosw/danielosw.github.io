@@ -2,7 +2,7 @@ import { defineConfig } from "vitest/config";
 import { sveltekit } from "@sveltejs/kit/vite";
 import tailwindcss from "@tailwindcss/vite";
 import { playwright } from '@vitest/browser-playwright'
-// disable legacy due to incompatablity with svelte compiler
+// disable legacy due to incompatibility with svelte compiler
 //import legacy from '@vitejs/plugin-legacy'
 export default defineConfig({
 	plugins: [
