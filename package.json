@@ -32,16 +32,16 @@
 		"@sveltejs/adapter-static": "^3.0.10",
 		"@sveltejs/kit": "^2.59.1",
 		"@sveltejs/vite-plugin-svelte": "^7.1.0",
-		"@tailwindcss/postcss": "^4.2.4",
+		"@tailwindcss/postcss": "^4.3.0",
 		"@types/eslint": "^9.6.1",
 		"@vitejs/plugin-legacy": "^8.0.1",
 		"@vitest/browser": "^4.1.5",
 		"@vitest/browser-playwright": "^4.0.16",
 		"autoprefixer": "^10.5.0",
-		"baseline-browser-mapping": "^2.10.27",
+		"baseline-browser-mapping": "^2.10.28",
 		"caniuse-lite": "^1.0.30001791",
-		"cssnano": "^7.1.9",
-		"cssnano-preset-advanced": "^7.0.16",
+		"cssnano": "^8.0.1",
+		"cssnano-preset-advanced": "^8.0.1",
 		"eslint": "^10.3.0",
 		"eslint-plugin-svelte": "^3.17.1",
 		"globals": "^17.6.0",
@@ -63,6 +63,6 @@
 		"vitest-browser-svelte": "^2.0.2"
 	},
 	"dependencies": {
-		"@tailwindcss/vite": "^4.2.4"
+		"@tailwindcss/vite": "^4.3.0"
 	}
 }
