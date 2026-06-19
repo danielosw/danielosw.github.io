@@ -28,7 +28,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v6 # Checkout repo
+      - uses: actions/checkout@v7 # Checkout repo
 
       - name: Cache npm
         uses: actions/cache@v5
