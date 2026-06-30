@@ -43,7 +43,7 @@
 		"cssnano": "^8.0.2",
 		"cssnano-preset-advanced": "^8.0.2",
 		"eslint": "^10.5.0",
-		"eslint-plugin-svelte": "^3.19.0",
+		"eslint-plugin-svelte": "^3.20.0",
 		"globals": "^17.7.0",
 		"playwright": "^1.61.1",
 		"postcss": "^8.5.15",
