@@ -46,7 +46,7 @@
 		"eslint-plugin-svelte": "^3.19.0",
 		"globals": "^17.7.0",
 		"playwright": "^1.61.1",
-		"postcss": "^8.5.15",
+		"postcss": "^8.5.25",
 		"postcss-load-config": "^6.0.1",
 		"postcss-nesting": "^14.0.0",
 		"postcss-preset-env": "^11.3.1",
