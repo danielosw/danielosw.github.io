@@ -1,27 +1,5 @@
-<script lang="ts">
-	import "./index.css";
-</script>
-
-<main class="main-home">
-	<div class="menu">
-		<ul>
-			<li>
-				<p class="text-item">
-					Hello! I am Daniel, and welcome to my site.
-				</p>
-			</li>
-			<li>
-				<div class="text-item">My Projects</div>
-			</li>
-			<li class="link-item">
-				<a href="/huntingbees"> fallen london calculators</a>
-			</li>
-			<li class="link-item">
-				<a href="/blog"> My blog</a>
-			</li>
-			<li class="link-item">
-				<a href="/portfolio"> My portfolio</a>
-			</li>
-		</ul>
-	</div>
-</main>
+<h1>Welcome to SvelteKit</h1>
+<p>
+    Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the
+    documentation
+</p>

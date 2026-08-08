@@ -5,7 +5,7 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"type": "bun",
+			"type": "node",
 			"request": "launch",
 			"name": "Debug File",
 			"program": "${file}",
@@ -15,7 +15,7 @@
 			"internalConsoleOptions": "neverOpen"
 		},
 		{
-			"type": "bun",
+			"type": "node",
 			"request": "launch",
 			"name": "Run File",
 			"program": "${file}",
@@ -25,9 +25,9 @@
 			"internalConsoleOptions": "neverOpen"
 		},
 		{
-			"type": "bun",
+			"type": "node",
 			"request": "attach",
-			"name": "Attach Bun",
+			"name": "Attach Node",
 			"url": "ws://localhost:6499/",
 			"stopOnEntry": false,
 			"internalConsoleOptions": "neverOpen"

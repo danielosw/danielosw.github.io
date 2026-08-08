@@ -1,3 +1,2 @@
 allowBuilds:
-  core-js: true
-  svelte-preprocess: true
+  esbuild: true
