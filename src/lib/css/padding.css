@@ -1,0 +1,15 @@
+@import url("$lib/css/constants.css");
+
+@define-mixin padding $size {
+	padding: calc(var(--spacing) * $size);
+}
+
+@define-mixin padding-inline $size {
+	padding-inline: calc(var(--spacing) * $size);
+}
+
+@define-mixin padding-block $size {
+	padding-block: calc(var(--spacing) * $size);
+}
+
+

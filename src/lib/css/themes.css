@@ -1,0 +1,21 @@
+@define-mixin light-theme {
+	--default-text-color: oklch(0% 0 0deg / 87%);
+	--default-bg-color: oklch(100% 0 0deg);
+	--border-color: oklch(0% 0 0deg / 10%);
+	--color-scheme: light;
+	--link-color: oklch(40% calc(3/14) 275.6035deg);
+	--hover-link-color: oklch(55.73% calc(2/9) 274.27deg);
+	--outline-color: oklch(0% 0 0deg / 50%);
+}
+
+
+@define-mixin dark-theme {
+	--default-text-color: oklch(100% 0 0deg / 87%);
+	--default-bg-color: oklch(26.03% 0 0deg);
+	--border-color: oklch(100% 0 0deg / 10%);
+	--color-scheme: dark;
+	--link-color: oklch(70% calc(3/14) 275.6035deg);
+	--hover-link-color: oklch(55.73% calc(2/9) 274.27deg);
+	--outline-color: oklch(100% 0 0deg / 50%);
+}
+

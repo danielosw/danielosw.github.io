@@ -1,0 +1,6 @@
+@import url("$lib/css/constants.css");
+
+@define-mixin margin $size {
+	margin: calc(var(--spacing) * $size);
+}
+

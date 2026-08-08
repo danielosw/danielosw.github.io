@@ -1,0 +1,59 @@
+@import url("$lib/css/constants.css");
+@import url("$lib/css/padding.css");
+@import url("$lib/css/gap.css");
+
+@define-mixin base-button {
+	border-radius: 0.25rem;
+	font-size: var(--text-sm);
+	line-height: var(--text-sm-line-height);
+	border: 1px solid var(--border-color);
+	background-color: var(--default-bg-color);
+	color: var(--default-text-color);
+}
+
+@define-mixin very-small-button {
+	border-radius: calc(var(--radius-xs));
+
+	@mixin base-button;
+	@mixin padding-inline 1;
+	@mixin padding-block 0.5;
+
+}
+
+@define-mixin small-button {
+	border-radius: calc(var(--radius-sm));
+
+	@mixin padding-inline 3;
+	@mixin padding-block 1.5;
+	@mixin base-button;
+
+}
+
+@define-mixin medium-button {
+	border-radius: var(--radius-md);
+
+	@mixin padding-inline 5;
+	@mixin padding-block 2.5;
+	@mixin base-button;
+}
+
+@define-mixin big-button {
+	border-radius: var(--radius-lg);
+
+	@mixin base-button;
+	@mixin padding-inline 7;
+	@mixin padding-block 3.5;
+
+}
+
+@define-mixin button-link {
+	@mixin gap 2;
+
+	/* remove default link styles */
+	text-decoration: none;
+	display: block grid;
+	grid-auto-flow: row;
+	cursor: pointer;
+}
+
+
