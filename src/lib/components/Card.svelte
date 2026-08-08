@@ -15,11 +15,12 @@
     .card {
         @mixin grid-stack;
         @mixin outline var(--outline-color), 1px, 4, var(--radius-lg);
+        width: 100%;
+        place-self: stretch;
         /* on hover, scale up the card */
         &:hover {
             transform: scale(1.05);
             transition: transform 0.2s ease-in-out;
         }
-        grid-template-rows: max(50px, 10%);
     }
 </style>

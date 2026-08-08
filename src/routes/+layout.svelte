@@ -11,12 +11,5 @@
 {@render children()}
 
 <style>
-	@import url("layout.css");
-	@media (prefers-color-scheme: dark) {
-		@mixin dark-theme;
-	}
-
-	@media (prefers-color-scheme: light) {
-		@mixin light-theme;
-	}
+	@import url("$lib/css/layout.css");
 </style>

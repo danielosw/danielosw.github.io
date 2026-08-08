@@ -53,6 +53,7 @@
 	text-decoration: none;
 	display: block grid;
 	grid-auto-flow: row;
+	place-self: stretch;
 	cursor: pointer;
 }
 

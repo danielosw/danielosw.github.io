@@ -23,11 +23,9 @@
 }
 
 @define-mixin grid-auto-fit-columns {
-	display: block grid;
-        grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
 }
 
 @define-mixin grid-auto-fit-rows {
-	display: block grid;
-	grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+	grid-template-rows: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
 }
