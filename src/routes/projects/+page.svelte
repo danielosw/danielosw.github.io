@@ -25,11 +25,7 @@
 </main>
 
 <style>
-    @import url("$lib/css/buttons.css");
-    @import url("$lib/css/text.css");
-    @import url("$lib/css/grid.css");
-    @import url("$lib/css/padding.css");
-    @import url("$lib/css/gap.css");
+    @import url("$lib/css/mixins.css");
     .linkto {
         @mixin button-link;
     }

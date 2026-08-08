@@ -1,0 +1,8 @@
+/* convenence file to import all mixins at once */
+@import url("$lib/css/margin.css");
+@import url("$lib/css/padding.css");
+@import url("$lib/css/gap.css");
+@import url("$lib/css/outline.css");
+@import url("$lib/css/text.css");
+@import url("$lib/css/buttons.css");
+@import url("$lib/css/grid.css");

@@ -1,4 +1,3 @@
-import calc from "postcss-calc";
 import postcssPresetEnv from "postcss-preset-env";
 import postcssMixins from "postcss-mixins";
 export default {
@@ -8,6 +7,5 @@ export default {
 		postcssPresetEnv({
 			stage: 2,
 		}),
-		calc(),
 	],
 };

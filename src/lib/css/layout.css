@@ -1,4 +1,5 @@
 @import url("$lib/css/constants.css");
+@import url("$lib/css/themes.css");
 
 :root{
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

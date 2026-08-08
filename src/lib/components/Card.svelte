@@ -7,7 +7,6 @@
 </div>
 
 <style>
-    @import url("$lib/css/constants.css");
     @import url("$lib/css/padding.css");
     @import url("$lib/css/gap.css");
     @import url("$lib/css/grid.css");
