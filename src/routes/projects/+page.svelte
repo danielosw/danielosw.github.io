@@ -6,17 +6,17 @@
 <main class="main">
     <h1 class="center">Projects</h1>
     <div class="cards">
-        <a class="linkto" href={resolve("/projects")}>
+        <a class="linkto" href={resolve("/projects/danielosw.github.io")}>
             <Card>
                 <h2>danielosw.github.io</h2>
             </Card>
         </a>
-        <a class="linkto" href={resolve("/about")}>
+        <a class="linkto" href={resolve("/projects/quiz app")}>
             <Card>
                 <h2>Quiz app</h2>
             </Card>
         </a>
-        <a class="linkto" href={resolve("/about")}>
+        <a class="linkto" href={resolve("/projects/quash")}>
             <Card>
                 <h2>Quash</h2>
             </Card>
