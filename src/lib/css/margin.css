@@ -1,0 +1,5 @@
+
+@define-mixin margin $size {
+	margin: calc(var(--spacing) * $size);
+}
+

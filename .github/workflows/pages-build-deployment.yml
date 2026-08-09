@@ -30,20 +30,34 @@ jobs:
     steps:
       - uses: actions/checkout@v6 # Checkout repo
 
-      - name: Cache npm
-        uses: actions/cache@v5
+      - name: Setup pnpm
+        # You may pin to the exact commit or the version.
+        # uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271
+        uses: pnpm/action-setup@v6.0.9
+        with:
+          cache: true
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm ci
+      - name: Restore test and build cache
+        id: build-cache
+        uses: actions/cache/restore@v6
         with:
           path: |
-            node_modules
-          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+            node_modules/.vite
+            node_modules/.vitest
+            .svelte-kit
+          key: ${{ runner.os }}-build-cache-${{ hashFiles('package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-npm-
-
+            ${{ runner.os }}-build-cache-
       - name: build
         run: |
-          npm install
-          npm run build
-          cp ./404.html ./build/404.html
+          pnpm install
+          pnpm run build
       - name: deploy
         uses: actions/configure-pages@v6
       - name: Upload artifact

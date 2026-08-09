@@ -1,0 +1,6 @@
+
+@define-mixin textsize $size {
+	font-size: var($size);
+}
+
+

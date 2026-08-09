@@ -17,41 +17,45 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
-      - name: Cache npm
-        uses: actions/cache@v5
+      - name: Setup pnpm
+        # You may pin to the exact commit or the version.
+        # uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271
+        uses: pnpm/action-setup@v6.0.9
+        with:
+          cache: true
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm ci
+      - name: Restore test and build cache
+        id: test-build-cache
+        uses: actions/cache/restore@v6
         with:
           path: |
-            node_modules
-          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+            node_modules/.vite
+            node_modules/.vitest
+            .svelte-kit
+          key: ${{ runner.os }}-test-cache-${{ hashFiles('package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-npm-
-
-      - name: Install JavaScript dependencies
-        run: npm install
-
-      - name: Get Playwright version
-        id: playwright-version
-        run: echo "version=$(npm run -A playwright --version | grep -oP 'Version \K[0-9.]+')" >> $GITHUB_OUTPUT
-
-      - name: Cache Playwright browsers
-        uses: actions/cache@v5
-        id: playwright-cache
+            ${{ runner.os }}-test-cache-
+      - name: Lint
+        run: pnpm run lint
+      - name: Test
+        run: pnpm test
+      - name: Build
+        run: pnpm build
+      - name: Save test and build cache
+        if: success() && steps.test-build-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v6
         with:
-          path: ~/.cache/ms-playwright
-          key: ${{ runner.os }}-playwright-${{ steps.playwright-version.outputs.version }}-${{ hashFiles('**/vite.config.ts') }}
-          restore-keys: |
-            ${{ runner.os }}-playwright-${{ steps.playwright-version.outputs.version }}-${{ hashFiles('**/vite.config.ts') }}
-            ${{ runner.os }}-playwright-${{ steps.playwright-version.outputs.version }}
-            ${{ runner.os }}-playwright-
-
-      - name: Install Playwright browsers
-        run: |
-          npm x playwright install --with-deps
-          npm x playwright install-deps
-      - name: Run tests
-        run: npm run test
-
-      - name: Upload test results
+          path: |
+            node_modules/.vite
+            node_modules/.vitest
+            .svelte-kit
+          key: ${{ runner.os }}-test-cache-${{ hashFiles('package-lock.json') }}      - name: Upload test results
         if: failure()
         uses: actions/upload-artifact@v7
         with:

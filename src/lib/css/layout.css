@@ -1,0 +1,21 @@
+@import url("$lib/css/constants.css");
+@import url("$lib/css/themes.css");
+
+:root{
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+	color-scheme: var(--color-scheme, dark);
+	color: var(--default-text-color);
+	background-color: var(--default-bg-color);
+	text-rendering: optimizelegibility;
+
+    @media (prefers-color-scheme: dark) {
+		@mixin dark-theme;
+	}
+
+	@media (prefers-color-scheme: light) {
+		@mixin light-theme;
+	}
+
+}

@@ -4,19 +4,21 @@
 </script>
 
 <main class="main">
-    <h1 class="center">Hello!</h1>
-    <p class="center">Welcome to my website.</p>
+    <h1 class="center">Projects</h1>
     <div class="cards">
         <a class="linkto" href={resolve("/projects")}>
             <Card>
-                <h2>Projects</h2>
-                <p>Check out my projects on GitHub.</p>
+                <h2>danielosw.github.io</h2>
             </Card>
         </a>
         <a class="linkto" href={resolve("/about")}>
             <Card>
-                <h2>About me</h2>
-                <p>Learn more about me and my background.</p>
+                <h2>Quiz app</h2>
+            </Card>
+        </a>
+        <a class="linkto" href={resolve("/about")}>
+            <Card>
+                <h2>Quash</h2>
             </Card>
         </a>
     </div>
@@ -24,7 +26,6 @@
 
 <style>
     @import url("$lib/css/mixins.css");
-
     .linkto {
         @mixin button-link;
     }
@@ -32,7 +33,7 @@
         @mixin grid-column;
         @mixin gap 16;
         @mixin grid-center-x;
-        @mixin grid-auto-fit-columns;
+        @mixin grid-auto-fit-rows;
     }
     .main {
         @mixin grid-stack;
