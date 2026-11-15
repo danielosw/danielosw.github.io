@@ -22,6 +22,26 @@
 	grid-auto-flow: column;
 }
 
+@define-mixin grid-auto {
+	@media screen and (orientation: portrait) {
+		@mixin grid-stack
+	}
+
+	@media screen and (orientation: landscape) {
+		@mixin grid-column
+	}
+}
+
+@define-mixin grid-auto-fit-flow {
+	@media screen and (orientation: portrait) {
+		@mixin grid-auto-fit-columns
+	}
+
+	@media screen and (orientation: landscape) {
+		@mixin grid-auto-fit-rows
+	}
+}
+
 @define-mixin grid-auto-fit-columns {
 	grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
 }
