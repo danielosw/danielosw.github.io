@@ -1,6 +1,8 @@
 <script lang="ts">
     import desktopImage from "#lib/assets/desktop screenshot.png";
     import mobileImage from "#lib/assets/mobile screenshot.png";
+    import Carol from "#lib/components/Carol.svelte";
+    import CarrolObject from "#lib/components/CarrolObject.svelte";
 </script>
 
 <main class="main">
@@ -9,17 +11,17 @@
         This very website. Written with Sveltekit+postcss, with a minimal,
         adoptive design
     </p>
-    <div class="carol">
-        <div class="mainer">
+    <Carol>
+        <CarrolObject>
             <h2 class="">Desktop site</h2>
 
             <img src={desktopImage} alt="Screenshot of main page on desktop" />
-        </div>
-        <div class="mainer">
+        </CarrolObject>
+        <CarrolObject>
             <h2>Mobile site</h2>
             <img src={mobileImage} alt="Screenshot of main page on mobile" />
-        </div>
-    </div>
+        </CarrolObject>
+    </Carol>
 </main>
 
 <style>
@@ -29,19 +31,6 @@
     }
     .main {
         @mixin grid-stack;
-        @mixin padding 4;
-        @mixin gap 2;
-        @mixin grid-center-x;
-    }
-    .mainer {
-        @mixin grid-stack;
-        @mixin padding 4;
-        @mixin gap 2;
-        @mixin grid-center-x;
-    }
-
-    .carol {
-        @mixin grid-auto;
         @mixin padding 4;
         @mixin gap 2;
         @mixin grid-center-x;
