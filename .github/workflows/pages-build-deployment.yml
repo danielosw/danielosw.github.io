@@ -28,21 +28,14 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v6 # Checkout repo
-
-      - name: Setup pnpm
-        # You may pin to the exact commit or the version.
-        # uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271
-        uses: pnpm/action-setup@v6.0.9
-        with:
-          cache: true
+      - uses: actions/checkout@v7 # Checkout repo
       - name: Setup Node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: 24
-          cache: pnpm
+          cache: npm
       - name: Install dependencies
-        run: pnpm ci
+        run: npm ci
       - name: Restore test and build cache
         id: build-cache
         uses: actions/cache/restore@v6
@@ -56,8 +49,8 @@ jobs:
             ${{ runner.os }}-build-cache-
       - name: build
         run: |
-          pnpm install
-          pnpm run build
+          npm install
+          npm run build
       - name: deploy
         uses: actions/configure-pages@v6
       - name: Upload artifact
