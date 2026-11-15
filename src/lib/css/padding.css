@@ -1,4 +1,4 @@
-
+/* stylelint-disable value-no-invalid */
 @define-mixin padding $size {
 	padding: calc(var(--spacing) * $size);
 }

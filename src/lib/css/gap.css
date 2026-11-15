@@ -1,4 +1,4 @@
-
+/* stylelint-disable value-no-invalid */
 @define-mixin gap $size {
 	gap: calc(var(--spacing) * $size);
 }

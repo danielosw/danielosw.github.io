@@ -1,4 +1,4 @@
-
+/* stylelint-disable value-no-invalid */
 @define-mixin outline $color, $size, $offset, $border-radius {
 	outline: $color solid $size;
     outline-offset: calc(var(--spacing) * $offset);
