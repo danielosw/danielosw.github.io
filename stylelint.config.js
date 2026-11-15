@@ -31,6 +31,7 @@ export default {
 		"color-named": [
 			"never",
 			{
+				/** @param {string} name @returns {string} */
 				message: (name) =>
 					`Disallowed named color "${name}". Use \`oklch\` instead`,
 			},
@@ -38,6 +39,8 @@ export default {
 		"color-no-hex": [
 			true,
 			{
+								/** @param {string} hex @returns {string} */
+
 				message: (hex) =>
 					`Disallowed hex color "${hex}". Use \`oklch\` instead`,
 			},
@@ -46,6 +49,8 @@ export default {
 		"function-disallowed-list": [
 			["rgb", "hsl", "hwb", "lab", "lch", "oklab"],
 			{
+												/** @param {string} fn @returns {string} */
+
 				message: (fn) =>
 					`Disallowed color function "${fn}". Use \`oklch\` instead`,
 			},

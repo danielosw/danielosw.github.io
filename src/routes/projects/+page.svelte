@@ -1,31 +1,26 @@
 <script lang="ts">
-    import Card from "$lib/components/Card.svelte";
+    import Card from "#lib/components/Card.svelte";
     import { resolve } from "$app/paths";
 </script>
 
 <main class="main">
     <h1 class="center">Projects</h1>
     <div class="cards">
-        <a class="linkto" href={resolve("/projects/danielosw.github.io")}>
-            <Card>
-                <h2>danielosw.github.io</h2>
-            </Card>
-        </a>
-        <a class="linkto" href={resolve("/projects/quiz app")}>
-            <Card>
-                <h2>Quiz app</h2>
-            </Card>
-        </a>
-        <a class="linkto" href={resolve("/projects/quash")}>
-            <Card>
-                <h2>Quash</h2>
-            </Card>
-        </a>
+        <a class="linkto" href={resolve("projects/danielosw.github.io")}
+            ><Card><h2>danielosw.github.io</h2></Card></a
+        >
+
+        <a class="linkto" href={resolve("projects/quiz app")}
+            ><Card><h2>Quiz app</h2></Card></a
+        >
+        <a class="linkto" href={resolve("projects/quash")}
+            ><Card><h2>Quash</h2></Card></a
+        >
     </div>
 </main>
 
 <style>
-    @import url("$lib/css/mixins.css");
+    @import url("#lib/css/mixins.css");
     .linkto {
         @mixin button-link;
     }

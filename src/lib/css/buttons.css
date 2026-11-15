@@ -1,5 +1,5 @@
-@import url("$lib/css/padding.css");
-@import url("$lib/css/gap.css");
+@import url("#lib/css/padding.css");
+@import url("#lib/css/gap.css");
 
 @define-mixin base-button {
 	border-radius: 0.25rem;

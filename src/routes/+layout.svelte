@@ -1,5 +1,5 @@
 <script lang="ts">
-	import favicon from "$lib/assets/favicon.svg";
+	import favicon from "#lib/assets/favicon.svg";
 
 	let { children } = $props();
 </script>
@@ -11,5 +11,5 @@
 {@render children()}
 
 <style>
-	@import url("$lib/css/layout.css");
+	@import url("#lib/css/layout.css");
 </style>
