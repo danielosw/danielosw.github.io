@@ -25,10 +25,10 @@
         @mixin button-link;
     }
     .cards {
-        @mixin grid-column;
+        @mixin grid-auto;
         @mixin gap 16;
         @mixin grid-center-x;
-        @mixin grid-auto-fit-rows;
+        @mixin grid-auto-fit-flow;
     }
     .main {
         @mixin grid-stack;
