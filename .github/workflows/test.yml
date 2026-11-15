@@ -48,8 +48,11 @@ jobs:
             node_modules/.vite
             node_modules/.vitest
             .svelte-kit
-          key: ${{ runner.os }}-test-cache-${{ hashFiles('package-lock.json') }}      - name: Upload test results
-        if: failure()
+          key: ${{ runner.os }}-test-cache-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-test-cache-
+
+      - if: failure()
         uses: actions/upload-artifact@v7
         with:
           name: test-results
